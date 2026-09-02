@@ -6,6 +6,7 @@ order: 1
 
 <script>
 import { onMount } from 'svelte';
+import { base } from '$app/paths';
 import ChecklistNode from '$lib/components/docs/ChecklistNode.svelte';
 import Callout from '$lib/components/docs/Callout.svelte';
 
@@ -59,7 +60,7 @@ function resetAll() {
 }
 
 onMount(async () => {
-  const res = await fetch('/mockchecklist.json');
+  const res = await fetch(`${base}/mockchecklist.json`);
   groups = await res.json();
   totalItems = countAllItems(groups);
   checked = load();

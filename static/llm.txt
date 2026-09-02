@@ -14,42 +14,42 @@ Stake Engine documentation covers game math, frontend development, RGS integrati
 
 ## Machine access
 
-- MCP setup and tool reference: [/docs/ai-integration/mcp-server](/docs/ai-integration/mcp-server)
-- Hayden agent workflow: [/docs/ai-integration/hayden-agent](/docs/ai-integration/hayden-agent)
-- Repository setup and MCP build commands: [README.md](README.md)
+- MCP setup and tool reference: [docs/ai-integration/mcp-server](docs/ai-integration/mcp-server)
+- Hayden agent workflow: [docs/ai-integration/hayden-agent](docs/ai-integration/hayden-agent)
+- Repository setup and MCP build commands: [GitHub repository](https://github.com/StakeEngine/docs)
 - Documentation source: `src/routes/docs/**/+page.svx` and `src/routes/faq/**/+page.svx`
 - Navigation and browser search index: `src/lib/config/navigation.ts`
 - MCP server source: `mcp-server/src/`
 
 ## Start here
 
-- [Introduction](/docs)
-- [Getting Started](/docs/math-sdk/getting-started): prerequisites and setup for Math SDK and Web SDK
-- [Math SDK](/docs/math-sdk): Python framework, simulations, payout tables, and game files
-- [Web SDK](/docs/web-sdk): PixieJS and Svelte frontend framework
-- [API Methods](/docs/api): RGS endpoint reference
-- [Approval](/docs/approval): launch requirements and checklist
-- [Architecture](/docs/architecture): outcome selection, stateless design, and data formats
-- [Reference](/docs/reference): currencies, languages, dimensions, and social mode
-- [FAQ](/faq): common setup, math, publishing, and RGS questions
+- [Introduction](docs)
+- [Getting Started](docs/math-sdk/getting-started): prerequisites and setup for Math SDK and Web SDK
+- [Math SDK](docs/math-sdk): Python framework, simulations, payout tables, and game files
+- [Web SDK](docs/web-sdk): PixieJS and Svelte frontend framework
+- [API Methods](docs/api): RGS endpoint reference
+- [Approval](docs/approval): launch requirements and checklist
+- [Architecture](docs/architecture): outcome selection, stateless design, and data formats
+- [Reference](docs/reference): currencies, languages, dimensions, and social mode
+- [FAQ](faq): common setup, math, publishing, and RGS questions
 
 ## Documentation
 
 ### API and RGS
 
-- [API Methods](/docs/api)
-- [Authenticate](/docs/api/authenticate)
-- [Balance](/docs/api/balance)
-- [Play](/docs/api/play)
-- [End Round](/docs/api/end-round)
-- [Event](/docs/api/event)
-- [Bet Replay](/docs/api/bet-replay)
+- [API Methods](docs/api)
+- [Authenticate](docs/api/authenticate)
+- [Balance](docs/api/balance)
+- [Play](docs/api/play)
+- [End Round](docs/api/end-round)
+- [Event](docs/api/event)
+- [Bet Replay](docs/api/bet-replay)
 
 ### Game architecture
 
-- [Architecture](/docs/architecture)
-- [Frontend Stack](/docs/architecture/frontend-stack)
-- [How the RGS Works](/docs/architecture/how-rgs-works)
+- [Architecture](docs/architecture)
+- [Frontend Stack](docs/architecture/frontend-stack)
+- [How the RGS Works](docs/architecture/how-rgs-works)
 
 ### Math SDK
 

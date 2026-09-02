@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import { base } from '$app/paths';
 	import { page } from '$app/stores';
 	import {
 		editor,
@@ -87,7 +88,7 @@
 	}
 
 	function getCurrentSection(): 'docs' | 'faq' {
-		return $page.url.pathname.startsWith('/faq') ? 'faq' : 'docs';
+		return $page.url.pathname.replace(base, '').startsWith('/faq') ? 'faq' : 'docs';
 	}
 </script>
 

@@ -2,6 +2,9 @@
   "name": "stake-engine-docs-mcp",
   "version": "1.0.0",
   "description": "MCP server for Stake Engine documentation - search, browse, and retrieve docs content",
+  "engines": {
+    "node": ">=18"
+  },
   "type": "module",
   "bin": {
     "stake-engine-docs-mcp": "dist/index.js"

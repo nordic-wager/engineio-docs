@@ -9,33 +9,33 @@
 		{
 			title: 'Math Framework',
 			description: 'Define game rules, simulate outcomes, and optimize win distributions.',
-			href: '/docs/math',
+			href: `${base}/docs/math-sdk`,
 			icon: 'calculator'
 		},
 		{
 			title: 'Frontend Framework',
 			description: 'PixiJS/Svelte toolkit for visually engaging slot games.',
-			href: '/docs/frontend',
+			href: `${base}/docs/web-sdk`,
 			icon: 'palette'
 		},
 		{
 			title: 'RGS Integration',
 			description: 'Connect to the Carrot Remote Gaming Server for deployment.',
-			href: '/docs/rgs',
+			href: `${base}/docs/architecture/how-rgs-works`,
 			icon: 'plug'
 		},
 		{
 			title: 'Approval Guidelines',
 			description: 'Requirements and best practices for Stake approval.',
-			href: '/docs/approval',
+			href: `${base}/docs/approval`,
 			icon: 'shield'
 		}
 	];
 
 	const quickLinks = [
-		{ title: 'Quick Start', href: '/docs/getting-started', desc: 'Get up and running' },
-		{ title: 'Example Games', href: '/docs/math/example-games', desc: 'Browse implementations' },
-		{ title: 'File Structure', href: '/docs/frontend/file-structure', desc: 'Project layout' }
+		{ title: 'Quick Start', href: `${base}/docs/math-sdk/getting-started`, desc: 'Get up and running' },
+		{ title: 'Example Games', href: `${base}/docs/math-sdk/example-games`, desc: 'Browse implementations' },
+		{ title: 'File Structure', href: `${base}/docs/web-sdk/file-structure`, desc: 'Project layout' }
 	];
 
 	onMount(() => {
@@ -92,7 +92,7 @@
 		</p>
 		<div class="mt-6 flex items-center gap-3">
 			<a
-				href="{base}/docs/getting-started"
+				href="{base}/docs/math-sdk/getting-started"
 				class="rounded-lg bg-primary-500 px-5 py-2.5 text-sm font-semibold text-black transition hover:bg-primary-400"
 			>
 				Get Started

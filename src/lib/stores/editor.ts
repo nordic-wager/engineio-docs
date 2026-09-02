@@ -1,4 +1,5 @@
 import { writable, derived, get } from 'svelte/store';
+import { base } from '$app/paths';
 
 export interface EditorFrontmatter {
 	title: string;
@@ -246,12 +247,17 @@ export const isDirty = derived(editor, ($editor) => {
 });
 
 export async function openEditor(routePath: string) {
-	const section = routePath.startsWith('/faq') ? 'faq' : 'docs';
+	const normalizedRoutePath = base && routePath.startsWith(`${base}/`)
+		? routePath.slice(base.length)
+		: routePath === base
+			? '/docs'
+			: routePath;
+	const section = normalizedRoutePath.startsWith('/faq') ? 'faq' : 'docs';
 
 	editor.update((s) => ({ ...s, error: null, saving: false }));
 
 	try {
-		const res = await fetch(`/__dev/editor/file?path=${encodeURIComponent(routePath)}`);
+		const res = await fetch(`/__dev/editor/file?path=${encodeURIComponent(normalizedRoutePath)}`);
 		if (!res.ok) {
 			const data = await res.json();
 			throw new Error(data.error || 'Failed to load file');
@@ -263,7 +269,7 @@ export async function openEditor(routePath: string) {
 		editor.set({
 			isOpen: true,
 			mode: 'edit',
-			routePath,
+			routePath: normalizedRoutePath,
 			section: section as 'docs' | 'faq',
 			originalContent: content,
 			frontmatter,

@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { ArrowRight } from '@lucide/svelte';
+	import { base } from '$app/paths';
 
 	interface PageMeta {
 		metadata?: {
@@ -11,8 +12,12 @@
 
 	const pages = import.meta.glob<PageMeta>('/src/routes/docs/**/+page.svx', { eager: true });
 
+	function routeWithoutBase(href: string): string {
+		return base && href.startsWith(`${base}/`) ? href.slice(base.length) : href;
+	}
+
 	function resolve(href: string): PageMeta['metadata'] | undefined {
-		const key = `/src/routes${href}/+page.svx`;
+		const key = `/src/routes${routeWithoutBase(href)}/+page.svx`;
 		return pages[key]?.metadata;
 	}
 
@@ -23,7 +28,7 @@
 	});
 
 	function getContent(href: string): string {
-		const key = `/src/routes${href}/+page.svx`;
+		const key = `/src/routes${routeWithoutBase(href)}/+page.svx`;
 		const raw = rawContent[key] ?? '';
 		return raw
 			.replace(/^---[\s\S]*?---\n*/m, '')
@@ -66,10 +71,12 @@
 		const cut = text.lastIndexOf(' ', limit);
 		return text.slice(0, cut > 0 ? cut : limit) + '…';
 	});
+
+	const resolvedHref = $derived(base && href.startsWith('/') && !href.startsWith(`${base}/`) ? `${base}${href}` : href);
 </script>
 
 <a
-	{href}
+	href={resolvedHref}
 	class="group not-prose my-4 flex gap-4 rounded-lg border border-zinc-800 px-5 py-4 transition-colors hover:border-zinc-700 hover:bg-zinc-800/50"
 >
 	<div class="min-w-0 flex-1">

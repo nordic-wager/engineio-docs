@@ -150,7 +150,7 @@
 
 	onMount(async () => {
 		try {
-			const res = await fetch('/mockgames.json');
+			const res = await fetch(`${base}/mockgames.json`);
 			if (!res.ok) throw new Error('Failed to load games');
 			const data: GameEntry[] = await res.json();
 			if (!data || data.length === 0) throw new Error('No games');
@@ -317,7 +317,7 @@
 
 	<div class="mt-4">
 		<a
-			href="{base}/docs/getting-started"
+			href="{base}/docs/math-sdk/getting-started"
 			class="inline-flex items-center gap-1.5 text-sm text-primary-500 transition hover:text-primary-400"
 		>
 			Build your next slot game

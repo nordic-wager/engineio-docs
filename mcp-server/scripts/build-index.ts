@@ -1,5 +1,6 @@
 import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync } from 'node:fs';
 import { resolve, relative } from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { parseFrontmatter, cleanSvxContent } from '../src/content.js';
 import type { DocPage, DocsIndex } from '../src/types.js';
 
@@ -34,9 +35,10 @@ function slugToTitle(slug: string): string {
 }
 
 function main() {
-  const projectRoot = resolve(import.meta.dirname, '..', '..');
+  const scriptDir = fileURLToPath(new URL('.', import.meta.url));
+  const projectRoot = resolve(scriptDir, '..', '..');
   const routesDir = resolve(projectRoot, 'src', 'routes');
-  const outputDir = resolve(import.meta.dirname, '..', 'data');
+  const outputDir = resolve(scriptDir, '..', 'data');
   const outputPath = resolve(outputDir, 'docs-index.json');
 
   // Only scan docs and faq directories
