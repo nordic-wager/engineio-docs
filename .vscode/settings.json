@@ -1,5 +1,32 @@
 {
 	"files.associations": {
 		"*.css": "tailwindcss"
+	},
+	"chat.mcp.serverSampling": {
+		"engineio-docs/.vscode/mcp.json: io.github.ChromeDevTools/chrome-devtools-mcp": {
+			"allowedModels": [
+				"copilotcli/auto",
+				"copilot/auto",
+				"agent-host-copilotcli:auto",
+				"opencodezen-agent/opencodezen-agent:big-pickle::session-2026-05-21-b::agent-host",
+				"opencodezen/OpenCode Zen/opencodezen:big-pickle::session-2026-05-21-b",
+				"opencodezen-agent/opencodezen-agent:deepseek-v4-flash-free::session-2026-05-21-b::agent-host",
+				"opencodezen/OpenCode Zen/opencodezen:deepseek-v4-flash-free::session-2026-05-21-b",
+				"opencodezen-agent/opencodezen-agent:laguna-s-2.1-free::session-2026-05-21-b::agent-host",
+				"opencodezen/OpenCode Zen/opencodezen:laguna-s-2.1-free::session-2026-05-21-b",
+				"opencodezen-agent/opencodezen-agent:ling-3.0-flash-fin-free::session-2026-05-21-b::agent-host",
+				"opencodezen/OpenCode Zen/opencodezen:ling-3.0-flash-fin-free::session-2026-05-21-b",
+				"opencodezen-agent/opencodezen-agent:mimo-v2.5-free::session-2026-05-21-b::agent-host",
+				"opencodezen/OpenCode Zen/opencodezen:mimo-v2.5-free::session-2026-05-21-b",
+				"opencodezen-agent/opencodezen-agent:muse-spark-1.2-contributor-free::session-2026-05-21-b::agent-host",
+				"opencodezen/OpenCode Zen/opencodezen:muse-spark-1.2-contributor-free::session-2026-05-21-b",
+				"opencodezen-agent/opencodezen-agent:muse-spark-1.3-contributor-free::session-2026-05-21-b::agent-host",
+				"opencodezen/OpenCode Zen/opencodezen:muse-spark-1.3-contributor-free::session-2026-05-21-b",
+				"opencodezen-agent/opencodezen-agent:nemotron-3-ultra-free::session-2026-05-21-b::agent-host",
+				"opencodezen/OpenCode Zen/opencodezen:nemotron-3-ultra-free::session-2026-05-21-b",
+				"opencodezen-agent/opencodezen-agent:nemotron-3.5-lightning-free::session-2026-05-21-b::agent-host",
+				"opencodezen/OpenCode Zen/opencodezen:nemotron-3.5-lightning-free::session-2026-05-21-b"
+			]
+		}
 	}
 }
