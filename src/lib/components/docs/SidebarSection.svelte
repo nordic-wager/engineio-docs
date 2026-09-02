@@ -2,6 +2,7 @@
 	import { page } from '$app/stores';
 	import { onMount } from 'svelte';
 	import gsap from 'gsap';
+	import Self from './SidebarSection.svelte';
 	import type { NavSection } from '$lib/types/navigation';
 	import {
 		BookCheck,
@@ -50,7 +51,7 @@
 		!!section.href && !section.items?.length && !section.subsections?.length
 	);
 
-	let isOpen = $state(isInSection(section, $page.url.pathname));
+	let isOpen = $state(false);
 	let contentEl: HTMLDivElement | undefined = $state();
 	let mounted = $state(false);
 
@@ -63,9 +64,7 @@
 	});
 
 	$effect(() => {
-		if (isInSection(section, $page.url.pathname)) {
-			isOpen = true;
-		}
+		isOpen = isInSection(section, $page.url.pathname);
 	});
 
 	$effect(() => {
@@ -104,7 +103,8 @@
 				{isActive ? 'text-primary-400' : 'text-zinc-400 hover:text-white'}"
 		>
 			{#if section.icon && iconMap[section.icon]}
-				<svelte:component this={iconMap[section.icon]} size={14} class="flex-shrink-0" />
+				{@const Icon = iconMap[section.icon]}
+				<Icon size={14} class="flex-shrink-0" />
 			{/if}
 			{section.title}
 			{#if section.badge}
@@ -121,7 +121,8 @@
 		>
 			<span class="flex items-center gap-1.5">
 				{#if section.icon && iconMap[section.icon]}
-					<svelte:component this={iconMap[section.icon]} size={14} class="text-zinc-500 flex-shrink-0" />
+					{@const Icon = iconMap[section.icon]}
+					<Icon size={14} class="text-zinc-500 flex-shrink-0" />
 				{/if}
 				{section.title}
 				{#if section.badge}
@@ -154,7 +155,8 @@
 									: 'text-zinc-400 hover:text-white'}"
 							>
 								{#if item.icon && iconMap[item.icon]}
-									<svelte:component this={iconMap[item.icon]} size={13} class="text-zinc-500 flex-shrink-0" />
+									{@const Icon = iconMap[item.icon]}
+									<Icon size={13} class="text-zinc-500 flex-shrink-0" />
 								{/if}
 								{item.title}
 								{#if item.badge}
@@ -170,7 +172,7 @@
 			{#if section.subsections?.length}
 				<div class="mt-2 space-y-1 border-l border-zinc-800 pl-3">
 					{#each section.subsections as subsection}
-						<svelte:self section={subsection} depth={depth + 1} />
+						<Self section={subsection} depth={depth + 1} />
 					{/each}
 				</div>
 			{/if}

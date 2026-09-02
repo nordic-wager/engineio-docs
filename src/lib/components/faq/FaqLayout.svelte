@@ -153,7 +153,7 @@
 
 	function setupInlineCodeCopy() {
 		if (!contentEl) return;
-		contentEl.querySelectorAll(':not(pre) > code').forEach((code) => {
+		contentEl.querySelectorAll<HTMLElement>(':not(pre) > code').forEach((code) => {
 			if (code.dataset.copyReady) return;
 			code.dataset.copyReady = 'true';
 
@@ -175,7 +175,8 @@
 
 				gsap.killTweensOf(el);
 
-				gsap.timeline()
+				gsap
+					.timeline()
 					.to(el, {
 						scale: 0.96,
 						duration: 0.08,
@@ -242,7 +243,7 @@
 				<FaqBreadcrumb pathname={$page.url.pathname} />
 				<article
 					bind:this={contentEl}
-					class="prose prose-invert prose-zinc max-w-none
+					class="prose max-w-none prose-zinc prose-invert
 						prose-headings:scroll-mt-20
 						prose-a:text-primary-400 prose-a:no-underline hover:prose-a:underline
 						prose-code:text-primary-300 prose-code:before:content-none prose-code:after:content-none
@@ -251,9 +252,21 @@
 					{@render children()}
 				</article>
 				{#if formattedUpdated}
-					<div class="mt-8 flex items-center gap-1.5 border-t border-zinc-800 pt-4 text-sm text-zinc-500">
-						<svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-							<path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
+					<div
+						class="mt-8 flex items-center gap-1.5 border-t border-zinc-800 pt-4 text-sm text-zinc-500"
+					>
+						<svg
+							class="h-4 w-4"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+							stroke-width="1.5"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"
+							/>
 						</svg>
 						Updated {formattedUpdated}
 					</div>
@@ -264,7 +277,9 @@
 			<!-- Right Column: TOC or API Tester -->
 			{#if $activeEndpoint}
 				<aside class="hidden xl:block xl:w-[420px] xl:flex-shrink-0">
-					<div class="sticky top-20 h-[calc(100vh-5rem)] overflow-y-auto border-l border-white/[0.06]">
+					<div
+						class="sticky top-20 h-[calc(100vh-5rem)] overflow-y-auto border-l border-white/[0.06]"
+					>
 						<ApiTesterPanel endpoint={$activeEndpoint} />
 					</div>
 				</aside>

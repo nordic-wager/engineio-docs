@@ -46,11 +46,14 @@
 <div
 	class="fixed inset-0 z-[60] flex items-center justify-center bg-black/60 backdrop-blur-sm"
 	onclick={handleBackdropClick}
+	onkeydown={(e) => e.key === 'Escape' && onclose()}
 >
 	<div
 		class="w-full max-w-sm rounded-xl border border-zinc-800 bg-zinc-950 p-6 shadow-2xl"
 		onclick={(e) => e.stopPropagation()}
+		onkeydown={(e) => e.stopPropagation()}
 		role="dialog"
+		tabindex="-1"
 		aria-label="Delete page confirmation"
 	>
 		<h3 class="text-lg font-semibold text-white">Delete Page</h3>
@@ -66,7 +69,6 @@
 			bind:value={confirmInput}
 			class="mt-2 w-full rounded-md border border-zinc-700 bg-zinc-900 px-3 py-2 text-sm text-white placeholder-zinc-600 focus:border-red-500 focus:outline-none"
 			placeholder={slug}
-			autofocus
 		/>
 
 		{#if $editor.error}

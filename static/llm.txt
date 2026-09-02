@@ -1,0 +1,161 @@
+# Stake Engine Documentation
+
+> Machine-readable index for coding agents working with the Stake Engine game development platform.
+
+Stake Engine documentation covers game math, frontend development, RGS integration, API endpoints, approval requirements, and platform reference material. Prefer the canonical pages below over guessing from page titles or route names.
+
+## Agent workflow
+
+1. For a known topic, open the most specific page in this index.
+2. For an unknown topic, use the documentation MCP server's `search_docs` tool, then use `get_page` for the relevant route.
+3. Use `list_pages` to filter by `section` (`docs` or `faq`) or route `prefix`.
+4. Use `get_section_tree` when you need to understand the documentation hierarchy.
+5. When answering from documentation, cite the canonical route, for example `Source: /docs/api/play`.
+
+## Machine access
+
+- MCP setup and tool reference: [/docs/ai-integration/mcp-server](/docs/ai-integration/mcp-server)
+- Hayden agent workflow: [/docs/ai-integration/hayden-agent](/docs/ai-integration/hayden-agent)
+- Repository setup and MCP build commands: [README.md](README.md)
+- Documentation source: `src/routes/docs/**/+page.svx` and `src/routes/faq/**/+page.svx`
+- Navigation and browser search index: `src/lib/config/navigation.ts`
+- MCP server source: `mcp-server/src/`
+
+## Start here
+
+- [Introduction](/docs)
+- [Getting Started](/docs/math-sdk/getting-started): prerequisites and setup for Math SDK and Web SDK
+- [Math SDK](/docs/math-sdk): Python framework, simulations, payout tables, and game files
+- [Web SDK](/docs/web-sdk): PixieJS and Svelte frontend framework
+- [API Methods](/docs/api): RGS endpoint reference
+- [Approval](/docs/approval): launch requirements and checklist
+- [Architecture](/docs/architecture): outcome selection, stateless design, and data formats
+- [Reference](/docs/reference): currencies, languages, dimensions, and social mode
+- [FAQ](/faq): common setup, math, publishing, and RGS questions
+
+## Documentation
+
+### API and RGS
+
+- [API Methods](/docs/api)
+- [Authenticate](/docs/api/authenticate)
+- [Balance](/docs/api/balance)
+- [Play](/docs/api/play)
+- [End Round](/docs/api/end-round)
+- [Event](/docs/api/event)
+- [Bet Replay](/docs/api/bet-replay)
+
+### Game architecture
+
+- [Architecture](/docs/architecture)
+- [Frontend Stack](/docs/architecture/frontend-stack)
+- [How the RGS Works](/docs/architecture/how-rgs-works)
+
+### Math SDK
+
+- [Math SDK](/docs/math-sdk)
+- [Getting Started](/docs/math-sdk/getting-started)
+- [Quick Start](/docs/math-sdk/quick-start)
+- [Setup](/docs/math-sdk/setup)
+- [Game Config](/docs/math-sdk/setup/configs)
+- [Bet Mode](/docs/math-sdk/setup/betmode)
+- [Distribution](/docs/math-sdk/setup/distribution)
+- [Architecture](/docs/math-sdk/architecture)
+- [Game Structure](/docs/math-sdk/architecture/game-structure)
+- [Game Format](/docs/math-sdk/architecture/game-format)
+- [State Machine](/docs/math-sdk/architecture/state-machine)
+- [Calculations](/docs/math-sdk/calculations)
+- [Lines](/docs/math-sdk/calculations/lines)
+- [Ways](/docs/math-sdk/calculations/ways)
+- [Cluster](/docs/math-sdk/calculations/cluster)
+- [Scatter](/docs/math-sdk/calculations/scatter)
+- [Tumble](/docs/math-sdk/calculations/tumble)
+- [Board](/docs/math-sdk/calculations/board)
+- [Example Games](/docs/math-sdk/example-games)
+- [Game State](/docs/math-sdk/gamestate)
+- [Board State](/docs/math-sdk/gamestate/board)
+- [Events](/docs/math-sdk/gamestate/events)
+- [Force Files](/docs/math-sdk/gamestate/force-files)
+- [Simulation](/docs/math-sdk/gamestate/simulation)
+- [Symbols](/docs/math-sdk/gamestate/symbols)
+- [Wins](/docs/math-sdk/gamestate/wins)
+- [RGS Example](/docs/math-sdk/rgs-example)
+- [Source](/docs/math-sdk/source)
+- [Outputs](/docs/math-sdk/source/outputs)
+- [State](/docs/math-sdk/source/state)
+- [Executables](/docs/math-sdk/source/executables)
+- [Events](/docs/math-sdk/source/events)
+- [Win Manager](/docs/math-sdk/source/win-manager)
+
+### Web SDK
+
+- [Web SDK](/docs/web-sdk)
+- [Getting Started](/docs/web-sdk/getting-started)
+- [File Structure](/docs/web-sdk/file-structure)
+- [Flowchart](/docs/web-sdk/flowchart)
+- [Context](/docs/web-sdk/context)
+- [Adding Events](/docs/web-sdk/adding-events)
+- [Task Breakdown](/docs/web-sdk/task-breakdown)
+- [Storybook](/docs/web-sdk/storybook)
+- [UI Components](/docs/web-sdk/ui)
+
+### Approval and publishing
+
+- [Approval](/docs/approval)
+- [Checklist](/docs/approval/checklist)
+- [Game Tile](/docs/approval/game-tile)
+- [Math Requirements](/docs/approval/math-requirements)
+- [Frontend Requirements](/docs/approval/frontend-requirements)
+- [RGS Requirements](/docs/approval/rgs-requirements)
+- [Quality Rankings](/docs/approval/quality)
+- [Game Disclaimer](/docs/approval/disclaimer)
+
+### Reference
+
+- [Reference](/docs/reference)
+- [URL Structure](/docs/reference/url-structure)
+- [Currencies](/docs/reference/currencies)
+- [Dimensions](/docs/reference/dimensions)
+- [Languages](/docs/reference/languages)
+- [Social Mode](/docs/reference/social-mode)
+
+### Examples and AI integration
+
+- [Examples](/docs/example)
+- [API Example](/docs/example/api)
+- [Hello Example](/docs/example/hello)
+- [AI Integration](/docs/ai-integration)
+- [MCP Server](/docs/ai-integration/mcp-server)
+- [Hayden Agent](/docs/ai-integration/hayden-agent)
+
+## FAQ
+
+### Getting started
+
+- [Getting Started FAQ](/faq/getting-started)
+- [How do I start?](/faq/getting-started/how-do-i-start)
+
+### Math
+
+- [Math FAQ](/faq/math)
+- [RTP variation and side bets](/faq/math/rtp-variation-side-bets)
+- [What files are required?](/faq/math/what-files-are-required)
+
+### Publishing
+
+- [Publishing FAQ](/faq/publishing)
+- [Exclusivity requirements](/faq/publishing/exclusivity-requirements)
+- [Game ranking](/faq/publishing/game-ranking)
+- [Game removal](/faq/publishing/game-removal)
+
+### RGS
+
+- [RGS FAQ](/faq/rgs)
+- [How the RGS works](/faq/rgs/how-rgs-works)
+- [How to authenticate](/faq/rgs/how-to-authenticate)
+- [What is a session ID?](/faq/rgs/what-is-session-id)
+- [When to call end-round](/faq/rgs/when-to-call-end-round)
+
+## Maintenance
+
+Keep this file synchronized with new documentation routes. The Svelte navigation is generated from page modules and their frontmatter, while the MCP index is rebuilt with `cd mcp-server && pnpm build`. Routes in this file should remain stable public URLs; use the page content and MCP search results as the source of truth for details.

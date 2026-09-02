@@ -6,7 +6,7 @@
 
 	type State = 'loading' | 'error' | 'ready';
 
-	let state: State = $state('loading');
+	let carouselState: State = $state('loading');
 	let games: (GameEntry | null)[] = $state([]);
 	let trackEl: HTMLDivElement | undefined = $state();
 	let viewportEl: HTMLDivElement | undefined = $state();
@@ -61,9 +61,7 @@
 		// Position within one set: sum widths of cards before centerIdx, then add half of placeholder
 		let pos = 0;
 		for (let i = 0; i < centerIdx; i++) {
-			pos += games[i] === null
-				? getPlaceholderWidth() + PLACEHOLDER_MARGIN * 2 + GAP
-				: cardW + GAP;
+			pos += games[i] === null ? getPlaceholderWidth() + PLACEHOLDER_MARGIN * 2 + GAP : cardW + GAP;
 		}
 		// Center of the placeholder card
 		pos += PLACEHOLDER_MARGIN + getPlaceholderWidth() / 2;
@@ -135,9 +133,10 @@
 
 			gsap.set(inner, {
 				opacity,
-				filter: glowIntensity > 0.1
-					? `drop-shadow(0 0 ${8 * glowIntensity}px oklch(71% 0.16 242 / ${0.6 * glowIntensity}))`
-					: 'none'
+				filter:
+					glowIntensity > 0.1
+						? `drop-shadow(0 0 ${8 * glowIntensity}px oklch(71% 0.16 242 / ${0.6 * glowIntensity}))`
+						: 'none'
 			});
 		});
 	}
@@ -163,7 +162,7 @@
 			withPlaceholder.splice(centerIdx, 0, null);
 			games = withPlaceholder;
 
-			state = 'ready';
+			carouselState = 'ready';
 
 			// Wait for DOM to render tripled cards
 			await new Promise((r) => requestAnimationFrame(r));
@@ -175,7 +174,7 @@
 
 			window.addEventListener('resize', handleResize);
 		} catch {
-			state = 'error';
+			carouselState = 'error';
 		}
 	});
 
@@ -242,20 +241,26 @@
 	});
 </script>
 
-{#if state === 'loading'}
+{#if carouselState === 'loading'}
 	<div class="mb-4">
 		<h3 class="text-lg font-semibold text-white">Games built with Stake Engine</h3>
-		<p class="mt-1 text-sm text-zinc-500">Spin through real examples and start building your own next hit.</p>
+		<p class="mt-1 text-sm text-zinc-500">
+			Spin through real examples and start building your own next hit.
+		</p>
 	</div>
 	<div class="flex gap-3 overflow-hidden">
 		{#each Array(7) as _}
-			<div class="h-[160px] w-[160px] flex-shrink-0 animate-pulse rounded-lg bg-zinc-800 sm:h-[130px] sm:w-[130px] max-sm:h-[100px] max-sm:w-[100px]"></div>
+			<div
+				class="h-[160px] w-[160px] flex-shrink-0 animate-pulse rounded-lg bg-zinc-800 max-sm:h-[100px] max-sm:w-[100px] sm:h-[130px] sm:w-[130px]"
+			></div>
 		{/each}
 	</div>
-{:else if state === 'ready'}
+{:else if carouselState === 'ready'}
 	<div class="mb-4">
 		<h3 class="text-lg font-semibold text-white">Games built with Stake Engine</h3>
-		<p class="mt-1 text-sm text-zinc-500">Spin through real examples and start building your own next hit.</p>
+		<p class="mt-1 text-sm text-zinc-500">
+			Spin through real examples and start building your own next hit.
+		</p>
 	</div>
 
 	<div class="carousel-viewport overflow-hidden py-4" bind:this={viewportEl}>
@@ -268,7 +273,10 @@
 		>
 			{#each tripleGames as entry, i}
 				{#if entry === null}
-					<div class="carousel-card flex-shrink-0" style="width: {getPlaceholderWidth()}px; margin: 0 {PLACEHOLDER_MARGIN}px;">
+					<div
+						class="carousel-card flex-shrink-0"
+						style="width: {getPlaceholderWidth()}px; margin: 0 {PLACEHOLDER_MARGIN}px;"
+					>
 						<div class="card-content">
 							<div
 								class="card-inner relative flex flex-col items-center justify-center overflow-hidden rounded-lg border border-zinc-700 bg-zinc-800"
@@ -291,10 +299,13 @@
 									alt={entry.game.name}
 									loading="lazy"
 									decoding="async"
-									class="w-full h-auto block"
+									class="block h-auto w-full"
 								/>
 							</div>
-							<span class="text-center text-xs text-zinc-400 hidden sm:block overflow-visible whitespace-normal leading-tight" style="width: {getCardWidth()}px;">
+							<span
+								class="hidden overflow-visible text-center text-xs leading-tight whitespace-normal text-zinc-400 sm:block"
+								style="width: {getCardWidth()}px;"
+							>
 								{entry.game.name}
 							</span>
 						</div>
@@ -310,8 +321,18 @@
 			class="inline-flex items-center gap-1.5 text-sm text-primary-500 transition hover:text-primary-400"
 		>
 			Build your next slot game
-			<svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-				<path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+			<svg
+				class="h-3.5 w-3.5"
+				fill="none"
+				viewBox="0 0 24 24"
+				stroke="currentColor"
+				stroke-width="2"
+			>
+				<path
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+				/>
 			</svg>
 		</a>
 	</div>

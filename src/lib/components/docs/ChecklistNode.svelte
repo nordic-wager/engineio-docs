@@ -1,12 +1,6 @@
 <script lang="ts">
-	export interface ChecklistItem {
-		id: number;
-		parentId: number | null;
-		text: string;
-		type: 'group' | 'item';
-		sortOrder: number;
-		children: ChecklistItem[];
-	}
+	import Self from './ChecklistNode.svelte';
+	import type { ChecklistItem } from '$lib/types/checklist';
 
 	let {
 		node,
@@ -73,7 +67,7 @@
 		{#if open}
 			<div class="checklist-group__body">
 				{#each node.children as child (child.id)}
-					<svelte:self node={child} {checked} depth={depth + 1} {onToggle} />
+					<Self node={child} {checked} depth={depth + 1} {onToggle} />
 				{/each}
 			</div>
 		{/if}
@@ -83,7 +77,14 @@
 		<button class="checklist-item__label" onclick={() => onToggle(node.id)}>
 			<span class="checklist-item__box" class:checklist-item__box--checked={checked[node.id]}>
 				{#if checked[node.id]}
-					<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+					<svg
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="3"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					>
 						<path d="M5 13l4 4L19 7" />
 					</svg>
 				{/if}
@@ -95,7 +96,7 @@
 		{#if node.children.length > 0}
 			<div class="checklist-item__children">
 				{#each node.children as child (child.id)}
-					<svelte:self node={child} {checked} depth={depth + 1} {onToggle} />
+					<Self node={child} {checked} depth={depth + 1} {onToggle} />
 				{/each}
 			</div>
 		{/if}
@@ -212,7 +213,9 @@
 		font-size: 0.8125rem;
 		line-height: 1.5;
 		color: rgb(212 212 216);
-		transition: color 0.15s, opacity 0.15s;
+		transition:
+			color 0.15s,
+			opacity 0.15s;
 	}
 	.checklist-item__text--checked {
 		color: rgb(113 113 122);

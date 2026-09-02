@@ -7,12 +7,14 @@ const base = defined_base.replace(/\/+$/, '');
  */
 export function baseRewrite() {
 	return {
+		/** @param {{ content: string, filename?: string }} markup */
 		markup({ content, filename }) {
 			if (!base) return;
 			if (!filename?.endsWith('.svx')) return;
 
 			const rewritten = content.replace(
-				/href="(\/[^"]*?)"/g,
+				/href="(\/[^\"]*?)"/g,
+				/** @param {string} match @param {string} path */
 				(match, path) => `href="${base}${path}"`
 			);
 

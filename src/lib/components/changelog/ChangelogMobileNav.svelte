@@ -33,7 +33,10 @@
 		<div
 			class="absolute inset-y-0 left-0 w-72 border-r border-zinc-800 bg-zinc-950 shadow-xl"
 			onclick={(e) => e.stopPropagation()}
+			onkeydown={(e) => e.stopPropagation()}
 			role="dialog"
+			tabindex="-1"
+			aria-label="Changelog navigation"
 		>
 			<div class="flex h-16 items-center justify-between border-b border-zinc-800 px-4">
 				<span class="text-sm font-semibold text-white">Changelog</span>

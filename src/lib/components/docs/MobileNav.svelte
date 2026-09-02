@@ -19,9 +19,6 @@
 		}
 	});
 
-	function renderSection(section: NavSection, depth: number = 0) {
-		return { section, depth };
-	}
 </script>
 
 {#snippet navSection(section: NavSection, depth: number)}
@@ -70,7 +67,7 @@
 	<div class="fixed inset-y-0 left-0 z-50 w-80 bg-zinc-900 border-r border-zinc-800 overflow-y-auto lg:hidden">
 		<div class="flex items-center justify-between p-4 border-b border-zinc-800">
 			<a href="{base}/" class="text-lg font-bold text-white">Stake Engine</a>
-			<button onclick={onclose} class="p-2 text-zinc-400 hover:text-white">
+			<button onclick={onclose} class="p-2 text-zinc-400 hover:text-white" aria-label="Close menu">
 				<svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
 				</svg>

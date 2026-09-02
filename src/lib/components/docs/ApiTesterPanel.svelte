@@ -26,7 +26,7 @@
 		return vals;
 	}
 
-	let paramValues = $state<Record<string, string>>(buildInitialParams(endpoint));
+	let paramValues = $state<Record<string, string>>({});
 	let isLoading = $state(false);
 	let responseStatus = $state<number | null>(null);
 	let responseStatusText = $state('');
@@ -42,11 +42,13 @@
 			await navigator.clipboard.writeText(responseBody);
 			copied = true;
 			setTimeout(() => (copied = false), 2000);
-		} catch {}
+		} catch {
+			return;
+		}
 	}
 
 	// Re-initialize when endpoint changes
-	let prevEndpointPath = $state(endpoint.method + endpoint.path);
+	let prevEndpointPath = $state('');
 	$effect(() => {
 		const key = endpoint.method + endpoint.path;
 		if (key !== prevEndpointPath) {
