@@ -33,5 +33,5 @@ If you have any queries or hit any issues along the way, feel free to post in `g
 
 Some fun early examples:
 
-- [Paperclip / Candy Rush](https://paperclip.live.stake-engine.com/candy-rush/v16/?replay=true&game=01996148-eecf-7678-be46-41de88c58951&version=1&mode=SUPER&event=55&currency=USD&amount=100000000&lang=en&rgs_url=rgs.stake-engine.com)
-- [Madlab / Nights Of Shinjuku](https://madlab-gaming.live.stake-engine.com/nights-of-shinjuku/v47/?replay=true&game=01994cfd-5de8-7bd4-8c6a-33eb8bb62b7e&version=26&mode=bonus2&event=0&currency=USD&amount=100000000&lang=en&device=desktop&social=false&demo=true&rgs_url=rgs.stake-engine.com)
+- [Paperclip / Candy Rush](https://paperclip.live.engineio.com/candy-rush/v16/?replay=true&game=01996148-eecf-7678-be46-41de88c58951&version=1&mode=SUPER&event=55&currency=USD&amount=100000000&lang=en&rgs_url=rgs.engineio.com)
+- [Madlab / Nights Of Shinjuku](https://madlab-gaming.live.engineio.com/nights-of-shinjuku/v47/?replay=true&game=01994cfd-5de8-7bd4-8c6a-33eb8bb62b7e&version=26&mode=bonus2&event=0&currency=USD&amount=100000000&lang=en&device=desktop&social=false&demo=true&rgs_url=rgs.engineio.com)

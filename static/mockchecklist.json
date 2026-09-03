@@ -530,7 +530,7 @@
             {
                 "id": 84,
                 "parentId": 80,
-                "text": "Check to make sure game has appeared in the stake-engine-game-approved + stake-engine-us-game-approved channels",
+                "text": "Check to make sure game has appeared in the engineio-game-approved + engineio-us-game-approved channels",
                 "type": "item",
                 "sortOrder": 5,
                 "children": []

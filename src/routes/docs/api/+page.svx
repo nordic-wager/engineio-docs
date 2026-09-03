@@ -14,7 +14,7 @@ import Callout from '$lib/components/docs/Callout.svelte';
 
 The Stake Engine RGS exposes a set of HTTP endpoints for wallet operations, game events, and bet replay. All wallet endpoints require a valid `sessionID` obtained from the operator platform.
 
-**Base URL:** `https://rgs.stake-engine.com`
+**Base URL:** `https://rgs.engineio.com`
 
 ## Endpoints
 

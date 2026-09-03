@@ -11,5 +11,5 @@ export interface GameEntry {
 }
 
 export function gameImageUrl(uuid: string): string {
-	return `https://stake-engine.com/api/asset/image/${uuid}`;
+	return `https://engine.io/api/asset/image/${uuid}`;
 }

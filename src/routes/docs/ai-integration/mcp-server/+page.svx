@@ -13,7 +13,7 @@ import Collapsible from '$lib/components/docs/Collapsible.svelte';
 
 # MCP Server
 
-The `stake-engine-docs-mcp` server provides full-text search and retrieval of all Stake Engine documentation via the [Model Context Protocol](https://modelcontextprotocol.io). It runs locally as a stdio process and is compatible with any MCP client.
+The `engineio-docs-mcp` server provides full-text search and retrieval of all Stake Engine documentation via the [Model Context Protocol](https://modelcontextprotocol.io). It runs locally as a stdio process and is compatible with any MCP client.
 
 ## Prerequisites
 
@@ -25,7 +25,7 @@ The `stake-engine-docs-mcp` server provides full-text search and retrieval of al
 **1. Clone the repository**
 
 ```bash
-git clone https://github.com/StakeEngine/docs.git
+git clone https://github.com/engineio/docs.git
 cd docs
 ```
 
@@ -62,7 +62,7 @@ The server communicates over **stdio**. Each MCP client has its own config file,
 
 <Callout type="warning">
 
-Always use the **absolute path** to the built server. Replace `/path/to/stake-engine-docs` with the actual location on your machine.
+Always use the **absolute path** to the built server. Replace `/path/to/engineio-docs` with the actual location on your machine.
 
 </Callout>
 
@@ -73,9 +73,9 @@ Create or edit `.mcp.json` in your project root:
 ```json
 {
   "mcpServers": {
-    "stake-engine-docs": {
+    "engineio-docs": {
       "command": "node",
-      "args": ["/path/to/stake-engine-docs/mcp-server/dist/index.js"]
+      "args": ["/path/to/engineio-docs/mcp-server/dist/index.js"]
     }
   }
 }
@@ -88,9 +88,9 @@ Open **Settings > Developer > Edit Config** and add to `claude_desktop_config.js
 ```json
 {
   "mcpServers": {
-    "stake-engine-docs": {
+    "engineio-docs": {
       "command": "node",
-      "args": ["/path/to/stake-engine-docs/mcp-server/dist/index.js"]
+      "args": ["/path/to/engineio-docs/mcp-server/dist/index.js"]
     }
   }
 }
@@ -103,9 +103,9 @@ Add to `.cursor/mcp.json` in your project root:
 ```json
 {
   "mcpServers": {
-    "stake-engine-docs": {
+    "engineio-docs": {
       "command": "node",
-      "args": ["/path/to/stake-engine-docs/mcp-server/dist/index.js"]
+      "args": ["/path/to/engineio-docs/mcp-server/dist/index.js"]
     }
   }
 }
@@ -118,9 +118,9 @@ Add to `.windsurf/mcp.json` in your project root:
 ```json
 {
   "mcpServers": {
-    "stake-engine-docs": {
+    "engineio-docs": {
       "command": "node",
-      "args": ["/path/to/stake-engine-docs/mcp-server/dist/index.js"]
+      "args": ["/path/to/engineio-docs/mcp-server/dist/index.js"]
     }
   }
 }
@@ -210,7 +210,7 @@ The agent prompt file is missing from the build output. Run `pnpm run build:serv
 
 <Collapsible title="Tools not appearing in client">
 
-- Verify the server starts without errors: `node /path/to/stake-engine-docs/mcp-server/dist/index.js`
+- Verify the server starts without errors: `node /path/to/engineio-docs/mcp-server/dist/index.js`
 - Check that the path in your client config is correct and absolute
 - Restart the MCP client after changing configuration
 

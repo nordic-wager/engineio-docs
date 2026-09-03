@@ -98,4 +98,4 @@ On upload, the RGS will:
 
 If there is any mismatch between the CSV and game logic payout multipliers, the upload will fail.
 
-For more details, see the [Math File Format documentation](/docs/math/math-file-format).
+For more details, see the [Game Format documentation](/docs/math-sdk/architecture/game-format).

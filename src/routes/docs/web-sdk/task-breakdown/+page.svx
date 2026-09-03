@@ -63,6 +63,5 @@ Stateless games can be complicated as well (vs. stateful games). For example, a 
 
 However with the data structure of math and the functions we have, we are able to break down a complicated game into small and atomic tasks (emitterEvents). It enables us to test the atomics independently as well. Visually it is something like this:
 
-![below](/docs-content/task_breakdown.png)
 
 The colors of the emitterEvents under a bookEvent can be different, which means they are from different svelte components.

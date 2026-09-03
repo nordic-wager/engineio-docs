@@ -12,4 +12,4 @@ Hi Everyone and Happy New Year!
 
 We've just processed payments for December 2025. Again another "biggest month" with over **$4.2 Million USD** paid in publisher profit, spanning over **116 teams** with a total of **458 active games**.
 
-Be sure to check out the [/insights](/insights) page for more details on bet-count and turnover to see who came out on top for the past month.
+Be sure to check out the [changelog](/changelog) for more details on recent updates.

@@ -1,6 +1,6 @@
 # Stake Engine Documentation - Hayden Agent
 
-This project has an MCP server (`stake-engine-docs`) that provides full-text search and retrieval of all Stake Engine documentation. Use it whenever you need information about the platform.
+This project has an MCP server (`engineio-docs`) that provides full-text search and retrieval of all Stake Engine documentation. Use it whenever you need information about the platform.
 
 ## MCP Server
 

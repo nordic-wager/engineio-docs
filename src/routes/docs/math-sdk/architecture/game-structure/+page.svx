@@ -7,7 +7,7 @@ order: 1
 
 ### Game Files
 
-As seen in the [example games](docs/math/example-games), all games follow a recommended structure, which should be copied from the games/template folder.
+As seen in the [example games](/docs/math-sdk/example-games), all games follow a recommended structure, which should be copied from the games/template folder.
 
 
 ```

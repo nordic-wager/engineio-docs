@@ -26,7 +26,6 @@ export const setContext = () => {
 
 <mark>Different apps and packages require different contexts.</mark>
 
-![below](/docs-content/context_diagram.png)
 
 <a name="contextEventEmitter"></a>
 

@@ -14,7 +14,7 @@ paygroup = {
 ```
 Ranges defined in `min_combination` and `max_combination` are inclusive, so for example if the `5-kind` payout for symbol `H1` pays `10x`, this would be written as: `((5,5),H1): 10`.
 
-Often (though not always) cluster pays games include a tumbling mechanic. Within the [cluster sample game](/docs/math/example-games) for example, while there are still winning combinations, the board is tumbled, wins are evaluated for the new board, the wallet manager is updated and relevant events are emitted:
+Often (though not always) cluster pays games include a tumbling mechanic. Within the [cluster sample game](/docs/math-sdk/example-games) for example, while there are still winning combinations, the board is tumbled, wins are evaluated for the new board, the wallet manager is updated and relevant events are emitted:
 ```python
 while self.win_data["totalWin"] > 0 and not (self.wincap_triggered):
     self.tumble_game_board()

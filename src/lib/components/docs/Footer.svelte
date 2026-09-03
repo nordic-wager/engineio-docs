@@ -9,7 +9,7 @@
 			<!-- Brand -->
 			<div class="sm:col-span-2 lg:col-span-1">
 				<a href="{base}/" class="inline-flex items-center gap-2">
-					<img src="{base}/stake-engine.svg" alt="Stake Engine" class="h-12 invert opacity-70" />
+					<img src="{base}/engineio.svg" alt="Stake Engine" class="h-12 invert opacity-70" />
 				</a>
 				<p class="mt-3 text-sm text-zinc-500 leading-relaxed max-w-xs">
 					Build, simulate, and deploy slot games on the Stake platform.
@@ -43,7 +43,7 @@
 				<ul class="mt-3 space-y-2">
 					<li>
 						<a
-							href="https://github.com/StakeEngine/docs"
+							href="https://github.com/engineio/docs"
 							target="_blank"
 							rel="noopener noreferrer"
 							class="footer-link inline-flex items-center gap-1.5"
@@ -56,7 +56,7 @@
 					</li>
 					<li>
 						<a
-							href="https://discord.gg/stakeengine"
+							href="https://discord.gg/engineio"
 							target="_blank"
 							rel="noopener noreferrer"
 							class="footer-link inline-flex items-center gap-1.5"
@@ -92,7 +92,7 @@
 			<p class="text-xs text-zinc-600">&copy; {currentYear} Stake Engine. All rights reserved.</p>
 			<div class="flex items-center gap-4">
 				<a
-					href="https://discord.gg/stakeengine"
+					href="https://discord.gg/engineio"
 					target="_blank"
 					rel="noopener noreferrer"
 					class="text-zinc-600 hover:text-[#5865F2] transition-colors"
@@ -103,7 +103,7 @@
 					</svg>
 				</a>
 				<a
-					href="https://github.com/StakeEngine/docs"
+					href="https://github.com/engineio/docs"
 					target="_blank"
 					rel="noopener noreferrer"
 					class="text-zinc-600 hover:text-zinc-400 transition-colors"

@@ -7,7 +7,7 @@ order: 5
 
 When setting up the game configuration file each mode is split into different win-criteria. Given a total number of simulations for a given bet-mode, the number of simulations required for each criteria is set using a `quota`, which determines the ratio of the total number of simulations satisfying a particular win criteria.
 
-Following the example used in the [Sample Games](/docs/math/example-games), the win criteria has been split into the following unique conditions:
+Following the example used in the [Sample Games](/docs/math-sdk/example-games), the win criteria has been split into the following unique conditions:
 
 1. `0` win amounts
 2. `basegame` wins
@@ -18,7 +18,7 @@ The purpose of segmenting these game outcomes is to ensure that there are suffic
 
 In the aforementioned list `0` dictates that the payout multiplier is ==0 for that simulation number. `basegame` is essentially any basegame spin where the payout is >0  and the `freegame` is not triggered. `freegame` is any scenario where the `freegame` is triggered from the basegame. `max-win` is any outcome where the maximum payout multiplier is awarded.
 
-This segmentation of wins is also used by the [optimization algorithm](/docs/math/optimization-algorithm).
+This segmentation of wins is also used by the [optimization algorithm](/docs/math-sdk/source/outputs).
 
 
 

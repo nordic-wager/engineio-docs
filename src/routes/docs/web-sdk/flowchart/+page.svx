@@ -7,7 +7,6 @@ order: 3
 
 Here it is a simplified flow chart of steps how a game is processed after RGS request. The real situation might be more complicated, but it follows the same idea.
 
-![below](/docs-content/flow_chart.png)
 
 <a name="playBookEvents"></a>
 

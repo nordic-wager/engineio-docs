@@ -14,7 +14,7 @@ import Callout from '$lib/components/docs/Callout.svelte';
 const endpoint = {
   method: 'POST',
   path: '/wallet/play',
-  baseUrl: 'https://rgs.stake-engine.com',
+  baseUrl: 'https://rgs.engineio.com',
   title: 'Play',
   description: 'Initiate a game round and debit the bet amount from the player\'s balance.',
   params: [

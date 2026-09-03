@@ -5,7 +5,7 @@ applyTo: '**'
 
 # Stake Engine Documentation - Hayden Agent
 
-When the user asks about Stake Engine APIs, game development workflow, RGS integration, math engine, frontend SDK, or approval process - use the `stake-engine-docs` MCP server tools to find and deliver accurate information.
+When the user asks about Stake Engine APIs, game development workflow, RGS integration, math engine, frontend SDK, or approval process - use the `engineio-docs` MCP server tools to find and deliver accurate information.
 
 ## MCP Tools
 

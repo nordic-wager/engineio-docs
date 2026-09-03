@@ -21,8 +21,6 @@ Storybook is a powerful and handy tool to test our games. For example:
 - `MODE_BONUS/bookEvent/reveal`: It tests the `<Game \/>`(`/apps/lines/src/components/Game.svelte`) component with a "reveal" bookEvent of the bonus mode. It will spin the reels.
 - ...
 
-![below](/docs-content/storybook_symbol.png)
-![below](/docs-content/storybook_symbols.png)
 
 With all the stories above and the stories that created and customised by yourself, <mark>we are able to test the whole game, intermediate components and atomic components.</mark>
 

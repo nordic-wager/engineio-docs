@@ -5,7 +5,7 @@ order: 6
 ---
 ## Game Board
 
-The `Board` class inherits the [`GeneraGameState`](/docs/math/source-files/state) class and handles the generation of game boards. Most commonly used is the `create_board_reelstrips()` function. Which selects a reelset as defined in the `BetMode.Distribution.conditions` class. For each reel a random stopping position is chosen with uniform probability on the range *[0,len(reelstrip[reel])-1]*. For each reelstop a 2D list of `Symbol` objects are created and attached to the GameState object.
+The `Board` class inherits the [`GeneraGameState`](/docs/math-sdk/gamestate) class and handles the generation of game boards. Most commonly used is the `create_board_reelstrips()` function. Which selects a reelset as defined in the `BetMode.Distribution.conditions` class. For each reel a random stopping position is chosen with uniform probability on the range *[0,len(reelstrip[reel])-1]*. For each reelstop a 2D list of `Symbol` objects are created and attached to the GameState object.
 
 Additionally, special symbol information is included (*special_symbols_on_board*) along with the reelstop values (*reel_positions*), padding symbols directly above and below the active board (*padding_positions*) and which reelstrip-id was used.
 

@@ -55,13 +55,11 @@ pnpm run storybook --filter=lines
 ```
 
 - You should see this:
-![below](/docs-content/storybook_init.png)
 
 ###
 
 - Now switch to `MODE_BASE/book/random` in the left sidebar, you will see an `Action` button appear on the left right conner of the game.
 
-![below](/docs-content/storybook_action.png)
 
 ###
 

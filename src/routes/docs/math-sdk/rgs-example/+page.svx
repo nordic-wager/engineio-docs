@@ -21,7 +21,7 @@ Your **balance** is displayed alongside the outcome of the previously completed 
 
 If your **win is greater than 0**, you'll need to manually call the `/end-round` API to finalize the bet-just like in a custom frontend implementation.
 
-> For more information, see [RGS Technical Details](/docs/rgs)
+> For more information, see [How the RGS Works](/docs/architecture/how-rgs-works)
 
 ---
 
@@ -52,8 +52,8 @@ We'll use **Svelte 5** bundled with **Vite** to create a static frontend. We'll 
     Make sure the defineConfig function includes: `base: "./"` (under *plugins*),
 
 3. **Replace styles and main component**:
-    - Copy the contents of [css.txt](https://stakeengine.github.io/math-sdk/simple_example/css.txt) into your generated `app.css`
-    - Replace the contents of [app_svelte.txt](https://stakeengine.github.io/math-sdk/simple_example/app_svelte.txt) into: `src/App.svelte`
+    - Copy the contents of [css.txt](https://engineio.github.io/math-sdk/simple_example/css.txt) into your generated `app.css`
+    - Replace the contents of [app_svelte.txt](https://engineio.github.io/math-sdk/simple_example/app_svelte.txt) into: `src/App.svelte`
 
 4. **Build the project**:
     `yarn build`
@@ -73,7 +73,6 @@ This simple Svelte app will:
 
 Once the math/frontend files have been uploaded to Stake Engine, launcing the game should result in the following:
 
-![Below](/docs-content/rgs_fe_setup.png)
 
 Pressing ***Place BET*** will populate the *play/ response* field with the RGS game round structure.
 If the round-win is >0, press ***END ROUND*** to finalise the bet, which will subsequently update your balance and close the bet.

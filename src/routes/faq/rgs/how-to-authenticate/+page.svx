@@ -12,7 +12,7 @@ import Callout from '$lib/components/docs/Callout.svelte';
 const endpoint = {
   method: 'POST',
   path: '/wallet/authenticate',
-  baseUrl: 'https://rgs.stake-engine.com',
+  baseUrl: 'https://rgs.engineio.com',
   title: 'Authenticate',
   description: 'Validate a session and retrieve balance, game config, and jurisdiction settings.',
   params: [

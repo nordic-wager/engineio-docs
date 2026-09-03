@@ -36,7 +36,7 @@ async function main() {
   const index = loadIndex();
 
   const server = new McpServer({
-    name: 'stake-engine-docs',
+    name: 'engineio-docs',
     version: '1.0.0',
   });
 

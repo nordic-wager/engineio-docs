@@ -1,5 +1,5 @@
 {
-  "name": "stake-engine-docs-mcp",
+  "name": "engineio-docs-mcp",
   "version": "1.0.0",
   "description": "MCP server for Stake Engine documentation - search, browse, and retrieve docs content",
   "engines": {
@@ -7,7 +7,7 @@
   },
   "type": "module",
   "bin": {
-    "stake-engine-docs-mcp": "dist/index.js"
+    "engineio-docs-mcp": "dist/index.js"
   },
   "files": [
     "dist",
@@ -21,7 +21,7 @@
   },
   "keywords": [
     "mcp",
-    "stake-engine",
+    "engineio",
     "documentation",
     "model-context-protocol"
   ],

@@ -19,4 +19,7 @@ The SDK is an optional software package handling both the client-side rendering 
 
 For verification, testing and security purposes, games uploaded to Stake Engine must consist of static files. Developers utilizing their own frontend and/or math solutions are welcome to upload compatible file-formats to the Admin Control Panel (ACP). All possible game-outcomes must be contained within compressed game-files, typically separated out by modes. Each outcome must be mapped to a corresponding CSV file summarizing a single game-round by a simulation number, probability of selection, and final payout multiplier. When a betting round is initiated a simulation number is selected at a frequency proportional to the simulation weighting, and the corresponding game events are returned though the `/play` API response.
 
-![RGS NBG Diagram](/docs-content/rgs-nbg-im.png)
+Continue with the [Math SDK](/docs/math-sdk) or [Web SDK](/docs/web-sdk) guides to start building a game.
+
+Use the [API Methods](/docs/api) reference when integrating the RGS.
+

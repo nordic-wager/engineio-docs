@@ -18,7 +18,7 @@ import ApiAiPrompt from '$lib/components/docs/ApiAiPrompt.svelte';
 const endpoint = {
   method: 'POST',
   path: '/wallet/authenticate',
-  baseUrl: 'https://rgs.stake-engine.com',
+  baseUrl: 'https://rgs.engineio.com',
   title: 'Authenticate',
   description: 'Authenticate a wallet session and retrieve balance, game configuration, and jurisdiction settings.',
   params: [

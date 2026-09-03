@@ -13,7 +13,7 @@ import Callout from '$lib/components/docs/Callout.svelte';
 
 To start building a game on Stake Engine, follow these steps:
 
-1. **Register** - create an account at [stake-engine.com](https://stake-engine.com) and set up your team profile.
+1. **Register** - create an account at [engine.io](https://engine.io) and set up your team profile.
 
 2. **Define your game math** - build the math model for your game: symbol distributions, paylines, win conditions, RTP, and hit frequency. Run simulations to validate the numbers.
 

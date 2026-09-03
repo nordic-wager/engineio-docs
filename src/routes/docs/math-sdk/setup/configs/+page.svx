@@ -32,7 +32,7 @@ self.reels = {}
 for r, f in reels.items():
     self.reels[r] = self.read_reels_csv(str.join("/", [self.reels_path, f]))
 ```
-Reelstrip weightings are required [distribution conditions]('gamestate_section/configuration_section/betmode_dist.md/'). An example of using multiple reelstrips for each gametype can be applied as:
+Reelstrip weightings are required [distribution conditions](/docs/math-sdk/setup/distribution). An example of using multiple reelstrips for each gametype can be applied as:
 ```python
 conditions={
     "reel_weights": {self.basegame_type: {"BR0": 2, "BR1": 1}, self.freegame_type: {"FR0":5, "FR1": 1}},
@@ -64,7 +64,7 @@ self.paytable = {
     ...
 }
 ```
-Where `kind` is the number of winning symbols. For cascading games, or other circumstances where multiple winning symbol numbers pay the same about, for example in the [scatter pays example game]('sample_section/sample_games.md') where 13+ symbols pay the same amount, `self.pay_group` can be defined. By then calling `self.paytable = self.convert_range_table(pay_group)` a paytable of the expected format is generated. The format of the pay-group objects (inclusive of both values in the kind-range) is given as:
+Where `kind` is the number of winning symbols. For cascading games, or other circumstances where multiple winning symbol numbers pay the same about, for example in the [scatter pays example game](/docs/math-sdk/example-games) where 13+ symbols pay the same amount, `self.pay_group` can be defined. By then calling `self.paytable = self.convert_range_table(pay_group)` a paytable of the expected format is generated. The format of the pay-group objects (inclusive of both values in the kind-range) is given as:
 ```python
 self.pay_group = {
     ((min_kind[int],max_kind[int]), name[str]): value[float],
@@ -74,4 +74,4 @@ self.pay_group = {
 
 #### Special symbols
 
-Special symbol attributes are assigned based on names appearing in `self.special_symbols = {attribute[str]: [name[str], ...]}`. Multiple symbols can share attributes and multiple attributes can be applied to the same symbol. Most games will at least have a `wild` and `scatter` attribute. Once the symbol is initialized, the value of the attribute is accessed through `symbol.attribute` or symbol.get_attribute(attribute) [see Symbols for more information]('gamestate_section/syms_board_section/symbol_info.md') regarding symbol object structures. By default the attribute is set to `True`, unless otherwise overridden using the `gamestate.special_symbol_functions`, defined in the gamestate override.
+Special symbol attributes are assigned based on names appearing in `self.special_symbols = {attribute[str]: [name[str], ...]}`. Multiple symbols can share attributes and multiple attributes can be applied to the same symbol. Most games will at least have a `wild` and `scatter` attribute. Once the symbol is initialized, the value of the attribute is accessed through `symbol.attribute` or symbol.get_attribute(attribute) [see Symbols for more information](/docs/math-sdk/gamestate/symbols) regarding symbol object structures. By default the attribute is set to `True`, unless otherwise overridden using the `gamestate.special_symbol_functions`, defined in the gamestate override.

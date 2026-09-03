@@ -17,7 +17,7 @@ import { triggerSend } from '$lib/stores/apiTester';
 const endpoint = {
   method: 'GET',
   path: '/bet/replay/{game}/{version}/{mode}/{event}',
-  baseUrl: 'https://rgs.stake-engine.com',
+  baseUrl: 'https://rgs.engineio.com',
   title: 'Bet Replay',
   description: 'Fetch replay data for a completed game round by its game, version, mode, and event ID.',
   params: [

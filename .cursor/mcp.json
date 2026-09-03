@@ -1,6 +1,6 @@
 {
   "mcpServers": {
-    "stake-engine-docs": {
+    "engineio-docs": {
       "command": "node",
       "args": ["./mcp-server/dist/index.js"]
     }

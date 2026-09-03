@@ -16,7 +16,7 @@ Stake Engine documentation covers game math, frontend development, RGS integrati
 
 - MCP setup and tool reference: [docs/ai-integration/mcp-server](docs/ai-integration/mcp-server)
 - Hayden agent workflow: [docs/ai-integration/hayden-agent](docs/ai-integration/hayden-agent)
-- Repository setup and MCP build commands: [GitHub repository](https://github.com/StakeEngine/docs)
+- Repository setup and MCP build commands: [GitHub repository](https://github.com/engineio/docs)
 - Documentation source: `src/routes/docs/**/+page.svx` and `src/routes/faq/**/+page.svx`
 - Navigation and browser search index: `src/lib/config/navigation.ts`
 - MCP server source: `mcp-server/src/`

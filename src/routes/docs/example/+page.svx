@@ -107,7 +107,7 @@ Custom label: <Badge type="new">{#snippet children()}v2.1{/snippet}</Badge>
   items={["TypeScript", "JavaScript"]}
   langs={["typescript", "javascript"]}
   codes={[
-    `import { StakeEngine } from '@stake/engine';\n\nconst client = new StakeEngine({\n  apiKey: process.env.STAKE_API_KEY as string\n});`,
-    `const { StakeEngine } = require('@stake/engine');\n\nconst client = new StakeEngine({\n  apiKey: process.env.STAKE_API_KEY\n});`
+    `import { engineio } from '@stake/engine';\n\nconst client = new engineio({\n  apiKey: process.env.STAKE_API_KEY as string\n});`,
+    `const { engineio } = require('@stake/engine');\n\nconst client = new engineio({\n  apiKey: process.env.STAKE_API_KEY\n});`
   ]}
 />

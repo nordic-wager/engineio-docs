@@ -91,12 +91,12 @@ export function registerTools(server: McpServer, index: DocsIndex): void {
 
   server.resource(
     'agent-prompt',
-    'stake-engine-docs://agent-prompt',
+    'engineio-docs://agent-prompt',
     { mimeType: 'text/plain', description: 'Hayden agent system prompt for working with Stake Engine documentation' },
     async () => ({
       contents: [
         {
-          uri: 'stake-engine-docs://agent-prompt',
+          uri: 'engineio-docs://agent-prompt',
           mimeType: 'text/plain',
           text: prompt,
         },

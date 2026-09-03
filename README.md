@@ -48,9 +48,9 @@ Add to your `.claude/settings.json` (project or global):
 ```json
 {
   "mcpServers": {
-    "stake-engine-docs": {
+    "engineio-docs": {
       "command": "node",
-      "args": ["/absolute/path/to/stake-engine-docs/mcp-server/dist/index.js"]
+      "args": ["/absolute/path/to/engineio-docs/mcp-server/dist/index.js"]
     }
   }
 }
@@ -63,9 +63,9 @@ Add to `claude_desktop_config.json`:
 ```json
 {
   "mcpServers": {
-    "stake-engine-docs": {
+    "engineio-docs": {
       "command": "node",
-      "args": ["/absolute/path/to/stake-engine-docs/mcp-server/dist/index.js"]
+      "args": ["/absolute/path/to/engineio-docs/mcp-server/dist/index.js"]
     }
   }
 }

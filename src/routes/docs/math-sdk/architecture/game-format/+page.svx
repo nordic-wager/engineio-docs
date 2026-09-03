@@ -5,7 +5,7 @@ order: 2
 ---
 # Standard Game Setup Requirements
 
-Without diving into specific functions, this section is intended to walkthrough how a new slot game would generally be setup. In practice it is recommended to start with one of the sample games which closest resemble the game being made, or otherwise starting from the [template](/docs/math/example-games).
+Without diving into specific functions, this section is intended to walkthrough how a new slot game would generally be setup. In practice it is recommended to start with one of the sample games which closest resemble the game being made, or otherwise starting from the [template](/docs/math-sdk/example-games).
 
 ## Configuration file
 

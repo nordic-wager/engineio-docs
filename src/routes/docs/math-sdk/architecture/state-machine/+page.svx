@@ -35,7 +35,6 @@ The entry point for all game simulations is the `run.py` file, which initializes
 These **global `GameState` attributes** remain consistent across all game modes and simulations. When a simulation runs, the `run_spin()` method creates a sub-instance of the **GeneralGameState**, allowing modifications to game data directly through the `self` object. This design reduces the need for passing objects between functions, streamlining game logic development.
 
 At a high level, the structure of the engine is shown below:
-![Engine Flowchart](/docs-content/flow_chart.png)
 
 ### Extending Core Functionality
 

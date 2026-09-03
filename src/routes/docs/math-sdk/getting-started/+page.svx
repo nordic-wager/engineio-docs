@@ -24,7 +24,7 @@ Before you begin, ensure you have:
 ### Clone and Install
 
 ```bash
-git clone git@github.com:StakeEngine/math-sdk.git
+git clone git@github.com:engineio/math-sdk.git
 cd math-sdk
 make setup
 ```

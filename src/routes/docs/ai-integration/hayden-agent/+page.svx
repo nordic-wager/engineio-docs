@@ -127,7 +127,7 @@ For any MCP-compatible client or a custom application, you can fetch the prompt 
 
 ```typescript
 const resource = await client.readResource({
-  uri: 'stake-engine-docs://agent-prompt'
+  uri: 'engineio-docs://agent-prompt'
 });
 const systemPrompt = resource.contents[0].text;
 ```

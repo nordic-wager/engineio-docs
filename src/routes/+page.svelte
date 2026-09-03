@@ -98,7 +98,7 @@
 				Get Started
 			</a>
 			<a
-				href="https://github.com/StakeEngine/docs"
+				href="https://github.com/engineio/docs"
 				target="_blank"
 				rel="noopener noreferrer"
 				class="rounded-lg border border-zinc-700 px-5 py-2.5 text-sm font-semibold transition hover:border-zinc-500 hover:bg-zinc-800"

@@ -147,7 +147,7 @@
 			</button>
 
 			<a href="{base}/" class="shrink-0">
-				<img src="{base}/stake-engine.svg" alt="Stake Engine" class="h-12 invert" />
+				<img src="{base}/engineio.svg" alt="Stake Engine" class="h-12 invert" />
 			</a>
 
 			<nav class="hidden lg:flex items-center gap-1 ml-4">
@@ -192,7 +192,7 @@
 
 			<!-- Discord -->
 			<a
-				href="https://discord.gg/stakeengine"
+				href="https://discord.gg/engineio"
 				target="_blank"
 				rel="noopener noreferrer"
 				class="rounded-lg p-2 text-zinc-400 hover:bg-zinc-800 hover:text-[#5865F2] transition-colors"
@@ -205,7 +205,7 @@
 
 			<!-- GitHub -->
 			<a
-				href="https://github.com/StakeEngine/docs"
+				href="https://github.com/engineio/docs"
 				target="_blank"
 				rel="noopener noreferrer"
 				class="rounded-lg p-2 text-zinc-400 hover:bg-zinc-800 hover:text-white transition-colors"

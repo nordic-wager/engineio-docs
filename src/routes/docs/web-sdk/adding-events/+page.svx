@@ -69,7 +69,6 @@ export type BookEvent =
 
 - `/apps/lines/src/game/bookEventHandlerMap.ts`: This file includes all the bookEventHandlers. Let is add a new one for the new bookEvent. Check the intellisense that the previous step brings, it provides a better developer experience.
 
-![below](/docs-content/book_event_intellisense.png)
 
 ###
 
@@ -119,7 +118,6 @@ export const { eventEmitter } = createEventEmitter<EmitterEvent>();
 
 - `/apps/lines/src/components/GlobalMultiplier.svelte`: Back to our component file, the intellisense is there. Let is add the code to process the values with a spine animation as well.
 
-![below](/docs-content/emitter_event_intellisense.png)
 
 ###
 

@@ -21,7 +21,7 @@ Games are loaded via a standardized URL. The host, path, and query parameters te
 </div>
 <div class="px-4 py-3">
 <code class="block whitespace-nowrap text-sm leading-relaxed">
-<span class="text-blue-400">https://</span><span class="text-yellow-300">{`{team}`}</span><span class="text-zinc-500">.live.stake-engine.com/</span><span class="text-yellow-300">{`{game}`}</span><span class="text-zinc-500">/v</span><span class="text-yellow-300">{`{version}`}</span><span class="text-zinc-500">/?</span><span class="text-emerald-400">sessionID</span><span class="text-zinc-500">=</span><span class="text-orange-300">...</span><span class="text-zinc-500">&</span><span class="text-emerald-400">rgs_url</span><span class="text-zinc-500">=</span><span class="text-orange-300">...</span><span class="text-zinc-500">&</span><span class="text-emerald-400">lang</span><span class="text-zinc-500">=</span><span class="text-orange-300">...</span><span class="text-zinc-500">&</span><span class="text-emerald-400">currency</span><span class="text-zinc-500">=</span><span class="text-orange-300">...</span><span class="text-zinc-500">&</span><span class="text-emerald-400">device</span><span class="text-zinc-500">=</span><span class="text-orange-300">...</span><span class="text-zinc-500">&</span><span class="text-emerald-400">social</span><span class="text-zinc-500">=</span><span class="text-orange-300">...</span><span class="text-zinc-500">&</span><span class="text-emerald-400">demo</span><span class="text-zinc-500">=</span><span class="text-orange-300">...</span>
+<span class="text-blue-400">https://</span><span class="text-yellow-300">{`{team}`}</span><span class="text-zinc-500">.live.engineio.com/</span><span class="text-yellow-300">{`{game}`}</span><span class="text-zinc-500">/v</span><span class="text-yellow-300">{`{version}`}</span><span class="text-zinc-500">/?</span><span class="text-emerald-400">sessionID</span><span class="text-zinc-500">=</span><span class="text-orange-300">...</span><span class="text-zinc-500">&</span><span class="text-emerald-400">rgs_url</span><span class="text-zinc-500">=</span><span class="text-orange-300">...</span><span class="text-zinc-500">&</span><span class="text-emerald-400">lang</span><span class="text-zinc-500">=</span><span class="text-orange-300">...</span><span class="text-zinc-500">&</span><span class="text-emerald-400">currency</span><span class="text-zinc-500">=</span><span class="text-orange-300">...</span><span class="text-zinc-500">&</span><span class="text-emerald-400">device</span><span class="text-zinc-500">=</span><span class="text-orange-300">...</span><span class="text-zinc-500">&</span><span class="text-emerald-400">social</span><span class="text-zinc-500">=</span><span class="text-orange-300">...</span><span class="text-zinc-500">&</span><span class="text-emerald-400">demo</span><span class="text-zinc-500">=</span><span class="text-orange-300">...</span>
 </code>
 </div>
 </div>
@@ -29,7 +29,7 @@ Games are loaded via a standardized URL. The host, path, and query parameters te
 ### Example
 
 ```
-https://acme-games.live.stake-engine.com/treasure-hunt/v1/?sessionID=abc123&rgs_url=rgs.stake-engine.com&lang=en&currency=USD&device=desktop&social=false&demo=true
+https://acme-games.live.engineio.com/treasure-hunt/v1/?sessionID=abc123&rgs_url=rgs.engineio.com&lang=en&currency=USD&device=desktop&social=false&demo=true
 ```
 
 ## Path Segments
