@@ -6,6 +6,7 @@
 	import { faqSearchIndex } from '$lib/config/faq-navigation';
 	import { changelogSearchIndex } from '$lib/config/changelog';
 	import type { SearchEntry } from '$lib/types/navigation';
+	import { EngineWordmark } from '@engineio/ui';
 
 	let { onMenuClick }: { onMenuClick: () => void } = $props();
 
@@ -156,8 +157,8 @@
 				</svg>
 			</button>
 
-			<a href="{base}/" class="shrink-0">
-				<img src="{base}/engine-wordmark.svg" alt="Engine" class="h-10 w-auto" />
+			<a href="{base}/" class="shrink-0" aria-label="Engine home">
+				<EngineWordmark class="h-10 w-auto" />
 			</a>
 
 			<nav class="ml-4 hidden items-center gap-1 lg:flex">

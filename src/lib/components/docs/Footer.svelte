@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { base } from '$app/paths';
+	import { EngineWordmark } from '@engineio/ui';
 	const currentYear = new Date().getFullYear();
 </script>
 
@@ -8,8 +9,8 @@
 		<div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
 			<!-- Brand -->
 			<div class="sm:col-span-2 lg:col-span-1">
-				<a href="{base}/" class="inline-flex items-center gap-2">
-					<img src="{base}/engine-wordmark.svg" alt="Engine" class="h-10 w-auto opacity-70" />
+				<a href="{base}/" class="inline-flex items-center gap-2 opacity-70">
+					<EngineWordmark class="h-10 w-auto" />
 				</a>
 				<p class="mt-3 max-w-xs text-sm leading-relaxed text-zinc-500">
 					Build, simulate, and deploy slot games on the Stake platform.

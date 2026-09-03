@@ -14,7 +14,7 @@ import Callout from '$lib/components/docs/Callout.svelte';
 const endpoint = {
   method: 'POST',
   path: '/bet/event',
-  baseUrl: 'https://rgs.engineio.com',
+  baseUrl: 'https://rgs.engine.io',
   title: 'Event',
   description: 'Track in-progress player actions during a round for state recovery.',
   params: [

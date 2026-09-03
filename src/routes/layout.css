@@ -1,4 +1,6 @@
 @import 'tailwindcss';
+@import '@engineio/ui/styles';
+@source '../../node_modules/@engineio/ui/dist';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
 

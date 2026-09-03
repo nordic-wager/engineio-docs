@@ -14,7 +14,7 @@ import Callout from '$lib/components/docs/Callout.svelte';
 const endpoint = {
   method: 'POST',
   path: '/wallet/balance',
-  baseUrl: 'https://rgs.engineio.com',
+  baseUrl: 'https://rgs.engine.io',
   title: 'Balance',
   description: 'Retrieve the player\'s current wallet balance.',
   params: [
