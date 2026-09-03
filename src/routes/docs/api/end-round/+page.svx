@@ -14,7 +14,7 @@ import Callout from '$lib/components/docs/Callout.svelte';
 const endpoint = {
   method: 'POST',
   path: '/wallet/end-round',
-  baseUrl: 'https://rgs.engine.io',
+  baseUrl: 'https://rgs.stake-engine.com',
   title: 'End Round',
   description: 'Complete a game round and trigger the final payout.',
   params: [

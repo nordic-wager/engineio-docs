@@ -14,7 +14,7 @@ import Callout from '$lib/components/docs/Callout.svelte';
 const endpoint = {
   method: 'POST',
   path: '/wallet/authenticate',
-  baseUrl: 'https://rgs.engine.io',
+  baseUrl: 'https://rgs.stake-engine.com',
   title: 'Authenticate',
   description: 'Authenticate a wallet session and retrieve balance, game configuration, and jurisdiction settings.',
   params: [

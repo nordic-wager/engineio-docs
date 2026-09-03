@@ -28,5 +28,6 @@
 				"opencodezen/OpenCode Zen/opencodezen:nemotron-3.5-lightning-free::session-2026-05-21-b"
 			]
 		}
-	}
+	},
+	"chat.byokUtilityModelDefault": "mainAgent"
 }

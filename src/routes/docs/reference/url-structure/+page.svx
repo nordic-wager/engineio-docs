@@ -29,7 +29,7 @@ Games are loaded via a standardized URL. The host, path, and query parameters te
 ### Example
 
 ```
-https://acme-games.live.engineio.com/treasure-hunt/v1/?sessionID=abc123&rgs_url=rgs.engine.io&lang=en&currency=USD&device=desktop&social=false&demo=true
+https://acme-games.live.engineio.com/treasure-hunt/v1/?sessionID=abc123&rgs_url=rgs.stake-engine.com&lang=en&currency=USD&device=desktop&social=false&demo=true
 ```
 
 ## Path Segments
