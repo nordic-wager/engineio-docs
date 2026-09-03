@@ -141,11 +141,11 @@ Active round data if the player has an incomplete round. `null` if no round is i
 
 ### `config.jurisdiction`
 
-Do not used. Ignore.
+Use these flags to apply jurisdiction-specific UI and feature restrictions. For example, when `socialCasino` is `true`, apply the [Social Mode](/docs/reference/social-mode) wording and display rules. A `disabled*` flag means the corresponding feature must be hidden or disabled.
 
 ### `meta`
 
-Do not used. Ignore.
+This field is reserved for server metadata and may be `null`. Clients should ignore unknown metadata fields and must not depend on `meta` for gameplay or approval behavior.
 
 ## Responses
 

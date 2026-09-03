@@ -43,6 +43,7 @@ All instances of the following terms must be replaced with the corresponding phr
 | cash | coins |
 | cost of | can be played for |
 | at the cost of | for |
+| bet amount | play amount |
 | credit | coins |
 | currency | token |
 | deposit | get coins |

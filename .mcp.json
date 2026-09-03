@@ -2,7 +2,9 @@
   "mcpServers": {
     "engineio-docs": {
       "command": "node",
-      "args": ["./mcp-server/dist/index.js"]
+      "args": [
+        "/workspaces/engineio-docs/mcp-server/dist/index.js"
+      ]
     }
   }
 }

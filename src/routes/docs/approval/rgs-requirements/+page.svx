@@ -17,6 +17,22 @@ Session authentication and bet transactions are handled exclusively through the 
 - Bet increments must reflect allowed values within *authenticate/config/minStep*.
 - Minimum and maximum bet levels must be available for selection as dictated by the RGS.
 
+The approval checks currently exercise these representative ranges:
+
+| Currency | Bet range | Default |
+|----------|-----------|---------|
+| USD | $0.10–$1,000 | $1.00 |
+| JPY | ¥10–¥150,000 | ¥100 |
+| MXN | MX$1–MX$15,000 | MX$10 |
+
+These are test examples, not hardcoded frontend values. Always use the `betLevels`, `minBet`, `maxBet`, and `stepBet` values returned by `/wallet/authenticate` for the current session.
+
+### Bet selection and refresh behavior
+
+- The selected bet must be one of the values returned by the RGS and must remain within the returned minimum and maximum.
+- Preserve the selected bet amount when the game is refreshed during a round; do not silently reset it to `defaultBetLevel`.
+- If the selected value is no longer valid after re-authentication, select a valid returned level and make that change visible to the player before the next play request.
+
 ## Cross-Site-Scripting (XSS)
 - Stake Engine enforces a strict XSS policy. The game build must consist only of static files and cannot reach external sources. Common issues include downloading fonts from external servers, which logs console errors.
 

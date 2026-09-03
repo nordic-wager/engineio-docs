@@ -1,0 +1,668 @@
+{
+  "errors": [
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/approval/game-tile/+page.svx",
+      "route": "/docs/approval/game-tile",
+      "type": "error",
+      "message": "Broken internal link: /docs-content/provider-logo.png (normalized: /docs-content/provider-logo.png)"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/approval/game-tile/+page.svx",
+      "route": "/docs/approval/game-tile",
+      "type": "error",
+      "message": "Broken internal link: /docs-content/tile-editor.jpg (normalized: /docs-content/tile-editor.jpg)"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/approval/game-tile/+page.svx",
+      "route": "/docs/approval/game-tile",
+      "type": "error",
+      "message": "Broken internal link: /thumbnail/imagery.jpg (normalized: /thumbnail/imagery.jpg)"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/approval/game-tile/+page.svx",
+      "route": "/docs/approval/game-tile",
+      "type": "error",
+      "message": "Broken internal link: /thumbnail/gradient.jpg (normalized: /thumbnail/gradient.jpg)"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/approval/game-tile/+page.svx",
+      "route": "/docs/approval/game-tile",
+      "type": "error",
+      "message": "Broken internal link: /thumbnail/text.jpg (normalized: /thumbnail/text.jpg)"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/changelog/payout-december-2025/+page.svx",
+      "route": "/changelog/payout-december-2025",
+      "type": "error",
+      "message": "Broken internal link: /changelog (normalized: /changelog)"
+    }
+  ],
+  "warnings": [
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/+page.svx",
+      "route": "/docs",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/ai-integration/+page.svx",
+      "route": "/docs/ai-integration",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/ai-integration/hayden-agent/+page.svx",
+      "route": "/docs/ai-integration/hayden-agent",
+      "type": "warning",
+      "message": "Heading level jumps from h1 to h3"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/ai-integration/hayden-agent/+page.svx",
+      "route": "/docs/ai-integration/hayden-agent",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/ai-integration/mcp-server/+page.svx",
+      "route": "/docs/ai-integration/mcp-server",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/api/+page.svx",
+      "route": "/docs/api",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/api/authenticate/+page.svx",
+      "route": "/docs/api/authenticate",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/api/bet-replay/+page.svx",
+      "route": "/docs/api/bet-replay",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/approval/+page.svx",
+      "route": "/docs/approval",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/approval/checklist/+page.svx",
+      "route": "/docs/approval/checklist",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/approval/frontend-requirements/+page.svx",
+      "route": "/docs/approval/frontend-requirements",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/approval/game-tile/+page.svx",
+      "route": "/docs/approval/game-tile",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/approval/quality/+page.svx",
+      "route": "/docs/approval/quality",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/architecture/how-rgs-works/+page.svx",
+      "route": "/docs/architecture/how-rgs-works",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/example/+page.svx",
+      "route": "/docs/example",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/example/api/+page.svx",
+      "route": "/docs/example/api",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/example/hello/+page.svx",
+      "route": "/docs/example/hello",
+      "type": "warning",
+      "message": "Missing description in frontmatter"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/math-sdk/+page.svx",
+      "route": "/docs/math-sdk",
+      "type": "warning",
+      "message": "Heading level jumps from h1 to h3"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/math-sdk/+page.svx",
+      "route": "/docs/math-sdk",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/math-sdk/architecture/+page.svx",
+      "route": "/docs/math-sdk/architecture",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/math-sdk/architecture/game-format/+page.svx",
+      "route": "/docs/math-sdk/architecture/game-format",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/math-sdk/architecture/game-structure/+page.svx",
+      "route": "/docs/math-sdk/architecture/game-structure",
+      "type": "warning",
+      "message": "Heading level jumps from h1 to h3"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/math-sdk/architecture/game-structure/+page.svx",
+      "route": "/docs/math-sdk/architecture/game-structure",
+      "type": "warning",
+      "message": "Heading level jumps from h2 to h4"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/math-sdk/architecture/game-structure/+page.svx",
+      "route": "/docs/math-sdk/architecture/game-structure",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/math-sdk/architecture/state-machine/+page.svx",
+      "route": "/docs/math-sdk/architecture/state-machine",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/math-sdk/calculations/+page.svx",
+      "route": "/docs/math-sdk/calculations",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/math-sdk/calculations/board/+page.svx",
+      "route": "/docs/math-sdk/calculations/board",
+      "type": "warning",
+      "message": "First heading should be h1, found h2"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/math-sdk/calculations/board/+page.svx",
+      "route": "/docs/math-sdk/calculations/board",
+      "type": "warning",
+      "message": "Heading level jumps from h0 to h2"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/math-sdk/calculations/board/+page.svx",
+      "route": "/docs/math-sdk/calculations/board",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/math-sdk/calculations/cluster/+page.svx",
+      "route": "/docs/math-sdk/calculations/cluster",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/math-sdk/calculations/lines/+page.svx",
+      "route": "/docs/math-sdk/calculations/lines",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/math-sdk/calculations/scatter/+page.svx",
+      "route": "/docs/math-sdk/calculations/scatter",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/math-sdk/calculations/tumble/+page.svx",
+      "route": "/docs/math-sdk/calculations/tumble",
+      "type": "warning",
+      "message": "First heading should be h1, found h2"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/math-sdk/calculations/tumble/+page.svx",
+      "route": "/docs/math-sdk/calculations/tumble",
+      "type": "warning",
+      "message": "Heading level jumps from h0 to h2"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/math-sdk/calculations/ways/+page.svx",
+      "route": "/docs/math-sdk/calculations/ways",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/math-sdk/example-games/+page.svx",
+      "route": "/docs/math-sdk/example-games",
+      "type": "warning",
+      "message": "Heading level jumps from h2 to h4"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/math-sdk/example-games/+page.svx",
+      "route": "/docs/math-sdk/example-games",
+      "type": "warning",
+      "message": "Heading level jumps from h2 to h4"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/math-sdk/example-games/+page.svx",
+      "route": "/docs/math-sdk/example-games",
+      "type": "warning",
+      "message": "Heading level jumps from h2 to h4"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/math-sdk/example-games/+page.svx",
+      "route": "/docs/math-sdk/example-games",
+      "type": "warning",
+      "message": "Heading level jumps from h2 to h4"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/math-sdk/example-games/+page.svx",
+      "route": "/docs/math-sdk/example-games",
+      "type": "warning",
+      "message": "Heading level jumps from h2 to h4"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/math-sdk/example-games/+page.svx",
+      "route": "/docs/math-sdk/example-games",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/math-sdk/gamestate/+page.svx",
+      "route": "/docs/math-sdk/gamestate",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/math-sdk/gamestate/board/+page.svx",
+      "route": "/docs/math-sdk/gamestate/board",
+      "type": "warning",
+      "message": "Heading level jumps from h1 to h3"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/math-sdk/gamestate/board/+page.svx",
+      "route": "/docs/math-sdk/gamestate/board",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/math-sdk/gamestate/events/+page.svx",
+      "route": "/docs/math-sdk/gamestate/events",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/math-sdk/gamestate/force-files/+page.svx",
+      "route": "/docs/math-sdk/gamestate/force-files",
+      "type": "warning",
+      "message": "Heading level jumps from h1 to h3"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/math-sdk/gamestate/simulation/+page.svx",
+      "route": "/docs/math-sdk/gamestate/simulation",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/math-sdk/gamestate/symbols/+page.svx",
+      "route": "/docs/math-sdk/gamestate/symbols",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/math-sdk/gamestate/wins/+page.svx",
+      "route": "/docs/math-sdk/gamestate/wins",
+      "type": "warning",
+      "message": "Heading level jumps from h1 to h3"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/math-sdk/gamestate/wins/+page.svx",
+      "route": "/docs/math-sdk/gamestate/wins",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/math-sdk/getting-started/+page.svx",
+      "route": "/docs/math-sdk/getting-started",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/math-sdk/quick-start/+page.svx",
+      "route": "/docs/math-sdk/quick-start",
+      "type": "warning",
+      "message": "First heading should be h1, found h2"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/math-sdk/quick-start/+page.svx",
+      "route": "/docs/math-sdk/quick-start",
+      "type": "warning",
+      "message": "Heading level jumps from h0 to h2"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/math-sdk/quick-start/+page.svx",
+      "route": "/docs/math-sdk/quick-start",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/math-sdk/rgs-example/+page.svx",
+      "route": "/docs/math-sdk/rgs-example",
+      "type": "warning",
+      "message": "Heading level jumps from h1 to h3"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/math-sdk/rgs-example/+page.svx",
+      "route": "/docs/math-sdk/rgs-example",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/math-sdk/setup/+page.svx",
+      "route": "/docs/math-sdk/setup",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/math-sdk/setup/betmode/+page.svx",
+      "route": "/docs/math-sdk/setup/betmode",
+      "type": "warning",
+      "message": "No headings found in content"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/math-sdk/setup/betmode/+page.svx",
+      "route": "/docs/math-sdk/setup/betmode",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/math-sdk/setup/configs/+page.svx",
+      "route": "/docs/math-sdk/setup/configs",
+      "type": "warning",
+      "message": "Heading level jumps from h1 to h4"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/math-sdk/setup/configs/+page.svx",
+      "route": "/docs/math-sdk/setup/configs",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/math-sdk/setup/distribution/+page.svx",
+      "route": "/docs/math-sdk/setup/distribution",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/math-sdk/source/+page.svx",
+      "route": "/docs/math-sdk/source",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/math-sdk/source/events/+page.svx",
+      "route": "/docs/math-sdk/source/events",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/math-sdk/source/executables/+page.svx",
+      "route": "/docs/math-sdk/source/executables",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/math-sdk/source/outputs/+page.svx",
+      "route": "/docs/math-sdk/source/outputs",
+      "type": "warning",
+      "message": "Heading level jumps from h1 to h3"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/math-sdk/source/win-manager/+page.svx",
+      "route": "/docs/math-sdk/source/win-manager",
+      "type": "warning",
+      "message": "Heading level jumps from h1 to h3"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/reference/+page.svx",
+      "route": "/docs/reference",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/reference/currencies/+page.svx",
+      "route": "/docs/reference/currencies",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/reference/url-structure/+page.svx",
+      "route": "/docs/reference/url-structure",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/web-sdk/+page.svx",
+      "route": "/docs/web-sdk",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/web-sdk/adding-events/+page.svx",
+      "route": "/docs/web-sdk/adding-events",
+      "type": "warning",
+      "message": "Heading level jumps from h1 to h3"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/web-sdk/adding-events/+page.svx",
+      "route": "/docs/web-sdk/adding-events",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/web-sdk/context/+page.svx",
+      "route": "/docs/web-sdk/context",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/web-sdk/context/+page.svx",
+      "route": "/docs/web-sdk/context",
+      "type": "warning",
+      "message": "Potential placeholder found: \\{\\{.*\\}\\}"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/web-sdk/file-structure/+page.svx",
+      "route": "/docs/web-sdk/file-structure",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/web-sdk/flowchart/+page.svx",
+      "route": "/docs/web-sdk/flowchart",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/web-sdk/getting-started/+page.svx",
+      "route": "/docs/web-sdk/getting-started",
+      "type": "warning",
+      "message": "Heading level jumps from h1 to h3"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/web-sdk/getting-started/+page.svx",
+      "route": "/docs/web-sdk/getting-started",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/web-sdk/task-breakdown/+page.svx",
+      "route": "/docs/web-sdk/task-breakdown",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/web-sdk/ui/+page.svx",
+      "route": "/docs/web-sdk/ui",
+      "type": "warning",
+      "message": "Potential placeholder found: \\{\\{.*\\}\\}"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/faq/getting-started/how-do-i-start/+page.svx",
+      "route": "/faq/getting-started/how-do-i-start",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/faq/math/what-files-are-required/+page.svx",
+      "route": "/faq/math/what-files-are-required",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/faq/publishing/exclusivity-requirements/+page.svx",
+      "route": "/faq/publishing/exclusivity-requirements",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/faq/publishing/game-removal/+page.svx",
+      "route": "/faq/publishing/game-removal",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/faq/rgs/how-to-authenticate/+page.svx",
+      "route": "/faq/rgs/how-to-authenticate",
+      "type": "warning",
+      "message": "Potential placeholder found: XXX"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/faq/rgs/how-to-authenticate/+page.svx",
+      "route": "/faq/rgs/how-to-authenticate",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/faq/rgs/what-is-session-id/+page.svx",
+      "route": "/faq/rgs/what-is-session-id",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/faq/rgs/when-to-call-end-round/+page.svx",
+      "route": "/faq/rgs/when-to-call-end-round",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/changelog/payout-december-2025/+page.svx",
+      "route": "/changelog/payout-december-2025",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/changelog/rating-system-minimum-threshold/+page.svx",
+      "route": "/changelog/rating-system-minimum-threshold",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/changelog/replay-mode/+page.svx",
+      "route": "/changelog/replay-mode",
+      "type": "warning",
+      "message": "Potential placeholder found: \\[.*\\]"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/api/authenticate/+page.svx",
+      "route": "/docs/api/authenticate",
+      "type": "warning",
+      "message": "Duplicate title \"Authenticate\" used in routes: /docs/api/authenticate, /docs/example/api"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/architecture/+page.svx",
+      "route": "/docs/architecture",
+      "type": "warning",
+      "message": "Duplicate title \"Architecture\" used in routes: /docs/architecture, /docs/math-sdk/architecture"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/math-sdk/getting-started/+page.svx",
+      "route": "/docs/math-sdk/getting-started",
+      "type": "warning",
+      "message": "Duplicate title \"Quick Start\" used in routes: /docs/math-sdk/getting-started, /docs/math-sdk/quick-start"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/routes/docs/web-sdk/getting-started/+page.svx",
+      "route": "/docs/web-sdk/getting-started",
+      "type": "warning",
+      "message": "Duplicate title \"Getting Started\" used in routes: /docs/web-sdk/getting-started, /faq/getting-started"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/lib/config/navigation.ts",
+      "route": "/docs/**/+page.svx",
+      "type": "warning",
+      "message": "Navigation references non-existent route: /docs/**/+page.svx"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/lib/config/navigation.ts",
+      "route": "/docs/**/+page.svx",
+      "type": "warning",
+      "message": "Navigation references non-existent route: /docs/**/+page.svx"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/lib/config/faq-navigation.ts",
+      "route": "/faq/**/+page.svx",
+      "type": "warning",
+      "message": "Navigation references non-existent route: /faq/**/+page.svx"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/lib/config/faq-navigation.ts",
+      "route": "/faq/**/+page.svx",
+      "type": "warning",
+      "message": "Navigation references non-existent route: /faq/**/+page.svx"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/lib/config/changelog.ts",
+      "route": "/changelog/**/+page.svx",
+      "type": "warning",
+      "message": "Navigation references non-existent route: /changelog/**/+page.svx"
+    },
+    {
+      "file": "/workspaces/engineio-docs/src/lib/config/changelog.ts",
+      "route": "/changelog/**/+page.svx",
+      "type": "warning",
+      "message": "Navigation references non-existent route: /changelog/**/+page.svx"
+    },
+    {
+      "file": "/workspaces/engineio-docs/mcp-server/data/docs-index.json",
+      "route": "",
+      "type": "warning",
+      "message": "MCP index page count (88) differs from source page count (94)"
+    }
+  ],
+  "stats": {
+    "totalFiles": 94,
+    "totalPages": 94,
+    "duplicateRoutes": 0,
+    "duplicateTitles": 4,
+    "missingFrontmatter": 0,
+    "brokenInternalLinks": 6
+  }
+}

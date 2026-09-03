@@ -10,7 +10,7 @@ Frontend checks will include reviewing in-game performance and display to ensure
 
 ## Game Communication
 ### Game Display
-- Submitted games must use unique audio and visual assets. Assest such as backgrounds, symbols and/or animations provided with the *web-sdk* sample games will not be approved for publication.
+- Submitted games must use unique audio and visual assets. Assets such as backgrounds, symbols and/or animations provided with the *web-sdk* sample games will not be approved for publication.
 - Ensure the game is free of visual bugs, including broken or missing assets or animations.
 - Popout view support: Stake offers players to option to use the 'mini-player' modal to play games in the background. Games must support this small view without the active game board been visibly distorted.
 - The game must support mobile view for commonly used devices, with all UI functionality remaining usable during screen scaling.
@@ -35,9 +35,23 @@ Frontend checks will include reviewing in-game performance and display to ensure
 - The UI must include an option to disable sounds.
 - The spacebar must be mapped to the *bet button*.
 - If an 'autoplay' feature is present, the player must confirm the autoplay action, games are not allowed to automatically place consecutive bets with one click.
+- Switching to a bet mode costing more than 2x the current mode must require an explicit confirmation step. A high-cost mode (for example, a 50x mode) must not activate from a single click.
 
 ## Other Checks
 - Check the network tab to ensure no errors or game information is being logged.
 - Playtest the game to verify it behaves as described in the rules (e.g., validating payout combinations).
 - Game will be tested with various combinations of currencies and languages.
 - If the game has a 'fastplay' option: wins amounts, winning symbol combinations and pop-up information and must still be legible to player.
+
+## Social-mode checks
+
+When the game is loaded with `social=true`, verify the social-mode wording throughout the game, including rules, bet controls, autoplay and bonus-feature dialogs, insufficient-funds errors, and replay screens. In particular:
+
+- The primary action must not be labeled **Bet**.
+- The bet amount field must use the approved social-mode wording rather than **Bet amount**.
+- Autoplay labels and dialogs must not use **AutoBET** or restricted gambling terms.
+- Bonus-feature labels and confirmations must not use **Buy** or **Bet**.
+- Insufficient-funds messages and replay UI must contain no restricted terms.
+- Support both GC and SC sessions, displaying their values without a `$` prefix.
+
+See [Social Mode](/docs/reference/social-mode) for the complete replacement table.

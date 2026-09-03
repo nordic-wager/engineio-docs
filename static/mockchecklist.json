@@ -9,7 +9,7 @@
             {
                 "id": 181,
                 "parentId": 1,
-                "text": "Game authenticates with RGS sucessfully on game launch",
+                "text": "Game authenticates with RGS successfully on game launch",
                 "type": "item",
                 "sortOrder": 1,
                 "children": []

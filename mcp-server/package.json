@@ -17,6 +17,8 @@
     "build:index": "tsx scripts/build-index.ts",
     "build:server": "tsc && cp src/hayden.md dist/hayden.md",
     "build": "pnpm run build:index && pnpm run build:server",
+    "validate": "tsx scripts/validate-content.ts",
+    "install:mcp": "tsx scripts/install.ts",
     "prepublishOnly": "pnpm run build"
   },
   "keywords": [

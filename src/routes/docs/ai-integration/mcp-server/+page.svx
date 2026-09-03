@@ -15,12 +15,37 @@ import Collapsible from '$lib/components/docs/Collapsible.svelte';
 
 The `engineio-docs-mcp` server provides full-text search and retrieval of all Stake Engine documentation via the [Model Context Protocol](https://modelcontextprotocol.io). It runs locally as a stdio process and is compatible with any MCP client.
 
-## Prerequisites
+## Quick Install (Recommended)
+
+**One command installs and configures everything:**
+
+```bash
+# From the engineio-docs repository root
+pnpm install:mcp
+```
+
+This single command will:
+1. Install all dependencies
+2. Build the MCP server
+3. Configure it for **VS Code, GitHub Copilot, Claude Desktop, Cursor, and Windsurf**
+4. Create a project-level `.mcp.json` for portability
+
+<Callout type="success">
+
+After running the installer, **restart your editor** to load the MCP server.
+
+</Callout>
+
+## Manual Installation
+
+If you prefer manual setup or need to customize the configuration:
+
+### Prerequisites
 
 - **Node.js** 18+
 - **pnpm** (recommended) or npm
 
-## Build & Run
+### Build & Run
 
 **1. Clone the repository**
 
@@ -51,39 +76,28 @@ node dist/index.js
 You should see a message like:
 
 ```
-Stake Engine Docs MCP server running - 79 pages indexed (generated 2026-02-28T...)
+Stake Engine Docs MCP server running - 88 pages indexed (generated 2026-09-03T...)
 ```
 
 Press `Ctrl+C` to stop - the server is designed to be launched by MCP clients, not run standalone.
 
-## Client Configuration
+## Editor Configuration
 
-The server communicates over **stdio**. Each MCP client has its own config file, but the format is the same - you just need the absolute path to `dist/index.js`.
+The installer automatically configures these editors:
 
-<Callout type="warning">
+| Editor | Config File |
+|--------|-------------|
+| VS Code | `~/.vscode/mcp.json` |
+| GitHub Copilot | `~/.github/copilot/mcp.json` |
+| Claude Desktop | `~/Library/Application Support/Claude/claude_desktop_config.json` (macOS) |
+| Cursor | `~/.cursor/mcp.json` |
+| Windsurf | `~/.windsurf/mcp.json` |
 
-Always use the **absolute path** to the built server. Replace `/path/to/engineio-docs` with the actual location on your machine.
+Each configuration adds the `engineio-docs` MCP server with the correct path to the built server.
 
-</Callout>
+### Project-Level Configuration
 
-### Claude Code
-
-Create or edit `.mcp.json` in your project root:
-
-```json
-{
-  "mcpServers": {
-    "engineio-docs": {
-      "command": "node",
-      "args": ["/path/to/engineio-docs/mcp-server/dist/index.js"]
-    }
-  }
-}
-```
-
-### Claude Desktop
-
-Open **Settings > Developer > Edit Config** and add to `claude_desktop_config.json`:
+A `.mcp.json` file is also created in the project root for portability:
 
 ```json
 {
@@ -96,35 +110,7 @@ Open **Settings > Developer > Edit Config** and add to `claude_desktop_config.js
 }
 ```
 
-### Cursor
-
-Add to `.cursor/mcp.json` in your project root:
-
-```json
-{
-  "mcpServers": {
-    "engineio-docs": {
-      "command": "node",
-      "args": ["/path/to/engineio-docs/mcp-server/dist/index.js"]
-    }
-  }
-}
-```
-
-### Windsurf
-
-Add to `.windsurf/mcp.json` in your project root:
-
-```json
-{
-  "mcpServers": {
-    "engineio-docs": {
-      "command": "node",
-      "args": ["/path/to/engineio-docs/mcp-server/dist/index.js"]
-    }
-  }
-}
-```
+This allows the MCP server to work when opening the project in any supported editor.
 
 ## Tools Reference
 
@@ -194,7 +180,31 @@ The full `pnpm run build` command runs both `build:index` and `build:server`. Us
 
 </Callout>
 
+## Updating
+
+To update to the latest documentation:
+
+```bash
+git pull
+pnpm install:mcp
+```
+
+Or manually:
+
+```bash
+cd mcp-server && pnpm run build
+```
+
 ## Troubleshooting
+
+<Collapsible title="MCP tools not appearing in editor">
+
+1. **Restart your editor completely** (not just reload window)
+2. Verify the config file exists at the expected path
+3. Check that Node.js 18+ is installed: `node --version`
+4. Try running the server manually: `node /path/to/engineio-docs/mcp-server/dist/index.js`
+
+</Collapsible>
 
 <Collapsible title="Could not find docs-index.json">
 
@@ -208,10 +218,28 @@ The agent prompt file is missing from the build output. Run `pnpm run build:serv
 
 </Collapsible>
 
-<Collapsible title="Tools not appearing in client">
+<Collapsible title="Permission denied on config file">
 
-- Verify the server starts without errors: `node /path/to/engineio-docs/mcp-server/dist/index.js`
-- Check that the path in your client config is correct and absolute
-- Restart the MCP client after changing configuration
+On Linux/macOS, you may need to create the config directory first:
+```bash
+mkdir -p ~/.vscode
+mkdir -p ~/.cursor
+mkdir -p ~/.windsurf
+```
 
 </Collapsible>
+
+<Collapsible title="Server starts but tools return errors">
+
+Check the server logs in your editor's MCP output panel. Common issues:
+- Stale `docs-index.json` - run `pnpm run build:index`
+- File path issues - ensure absolute paths in config
+- Node version mismatch - requires Node.js 18+
+
+</Collapsible>
+
+## Support
+
+- **Documentation:** https://engine.io/docs
+- **Issues:** https://github.com/engineio/docs/issues
+- **MCP Specification:** https://modelcontextprotocol.io

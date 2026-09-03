@@ -25,7 +25,7 @@ For full implementation details, API reference, query parameters, and the implem
 
 ## Questions?
 
-This feature is now live, and over the next few days we will update the approval checklist to include the requirements for the replay feature, and will update our documentation with the above.
+This feature is live. The [approval checklist](/docs/approval/checklist) and [Bet Replay documentation](/docs/api/bet-replay) include the replay requirements above.
 
 If you have any queries or hit any issues along the way, feel free to post in `general` or `published-creators` as these questions and conversations will likely benefit the whole community.
 
